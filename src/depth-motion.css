@@ -1,0 +1,54 @@
+/* Geometry and motion only: colors come from the existing theme tokens. */
+:root { --depth-distance:18px; --depth-cycle:12s; --depth-transition:280ms; }
+.depth-perspective { perspective:1200px; }
+.depth-surface { height:100%; width:100%; display:inherit; flex-direction:inherit; justify-content:inherit; flex:1; min-width:0; transform-style:preserve-3d; }
+.depth-surface > * { position:relative; }
+.depth-surface img { backface-visibility:hidden; }
+.depth-perspective:focus-within .depth-surface { transform:none !important; }
+.depth-section { position:relative; isolation:isolate; }
+.section-object { position:absolute; width:112px; height:112px; right:24px; top:-64px; perspective:600px; pointer-events:none; color:var(--forest-accent); opacity:.65; z-index:0; }
+.object-rig { position:absolute; top:22px; left:29px; width:54px; height:54px; transform-style:preserve-3d; transform:rotateX(-18deg) rotateY(-25deg); }
+.object-face { position:absolute; inset:0; display:grid; place-items:center; backface-visibility:hidden; background:var(--surface-muted); box-shadow:inset 0 0 0 1px currentColor; border-radius:8px; }
+.face-front { transform:translateZ(27px); }
+.face-back { transform:rotateY(180deg) translateZ(27px); }
+.face-left { transform:rotateY(-90deg) translateZ(27px); }
+.face-right { transform:rotateY(90deg) translateZ(27px); }
+.face-top { transform:rotateX(90deg) translateZ(27px); }
+.face-bottom { transform:rotateX(-90deg) translateZ(27px); }
+.face-top,.face-right { opacity:.7; }
+.object-orbit { position:absolute; inset:3px; border:1px dashed currentColor; border-radius:50%; transform:rotateX(65deg) rotateZ(-25deg); opacity:.25; }
+.object-shadow { position:absolute; width:55px; height:10px; bottom:12px; left:30px; background:currentColor; opacity:.1; border-radius:50%; filter:blur(5px); }
+.is-running .object-rig { animation:depth-float var(--depth-cycle) ease-in-out infinite; }
+.is-running .object-orbit { animation:depth-orbit 24s linear infinite; }
+.object-freight .object-rig,.object-network .object-rig { width:68px; left:22px; }
+.object-quality .object-rig,.object-assurance .object-rig { transform:rotateX(-12deg) rotateY(22deg); }
+.object-contact .object-rig { transform:rotateX(-10deg) rotateY(-15deg) rotateZ(-8deg); }
+.tracking-steps { perspective:900px; }
+.tracking-node { transition:transform var(--depth-transition),box-shadow var(--depth-transition); }
+.tracking-steps .selected .tracking-node { transform:translateY(-4px) rotateY(-10deg); }
+.tracking-detail,#process-detail { perspective:1200px; }
+.process-experience button[aria-pressed] { transform-style:preserve-3d; }
+.process-experience button[aria-pressed="true"] { transform:perspective(1000px) translateY(-4px) rotateX(2deg); }
+.home-page section p { max-width:70ch; }
+.home-page .product-card p { line-height:1.7; }
+.depth-perspective.product-card:hover { transform:none; }
+@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference) {
+ .depth-surface:hover > :first-child { transform:translateZ(12px); }
+ .depth-surface > :first-child { transition:transform var(--depth-transition); }
+ .tracking-steps button:hover .tracking-node { transform:translateY(-5px) rotateY(-12deg); }
+ .process-experience button[aria-pressed="false"]:hover { transform:perspective(1000px) translateY(-3px) rotateX(2deg); }
+}
+@keyframes depth-float { 0%,100% { transform:translateY(0) rotateX(-18deg) rotateY(-25deg); } 50% { transform:translateY(-10px) rotateX(-10deg) rotateY(18deg); } }
+@keyframes depth-orbit { from { transform:rotateX(65deg) rotateZ(-25deg); } to { transform:rotateX(65deg) rotateZ(335deg); } }
+@media(max-width:900px) { .section-object { width:80px; height:80px; right:12px; top:-48px; transform:scale(.7); transform-origin:right bottom; opacity:.4; } }
+@media(hover:none),(pointer:coarse) { .depth-surface { transform:none !important; }.depth-surface > * { transform:none; } }
+@media(prefers-reduced-motion:reduce) { .section-object * { animation:none !important; }.depth-surface,.tracking-steps .tracking-node,.process-experience button[aria-pressed] { transform:none !important; } }
+
+.cargo-depth { display:flex; gap:12px; align-items:center; min-height:44px; padding:6px 8px 10px; flex-wrap:wrap; perspective:700px; }
+.cargo-depth-unit { position:relative; width:34px; height:22px; transform-style:preserve-3d; color:inherit; }
+.cargo-front { position:absolute; inset:0; border:1px solid currentColor; border-radius:2px; opacity:.65; background:repeating-linear-gradient(90deg,transparent 0 5px,currentColor 5px 6px,transparent 6px 8px); }
+.cargo-top { position:absolute; width:34px; height:8px; top:-7px; left:4px; transform:skewX(-45deg); border:1px solid currentColor; opacity:.4; }
+.cargo-side { position:absolute; width:8px; height:22px; right:-8px; top:-4px; transform:skewY(-45deg); border:1px solid currentColor; opacity:.35; }
+.cargo-depth > span { font-size:11px; opacity:.8; }
+.route-network .depth-surface { display:block; }
+.depth-surface > img { display:block; }

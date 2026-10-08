@@ -1,0 +1,1383 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ABC EXPORTS | International Trading & Agricultural Export Company</title>
+  <meta name="description" content="ABC EXPORTS connects premium agricultural commodities, spices, and fresh produce from India with buyers across international markets. Reliable sourcing, strict quality control, and seamless global logistics." />
+  
+  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          colors: {
+            navy: {
+              850: '#0c1b30',
+              900: '#0b192c',
+              950: '#060d17',
+            },
+            forest: {
+              500: '#22c55e',
+              600: '#16a34a',
+              700: '#15803d',
+            },
+            gold: {
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+              accent: '#C5A059',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Clean backdrop blurs and subtle card hover states */
+    .hero-gradient {
+      background: linear-gradient(135deg, rgba(11, 25, 44, 0.92) 0%, rgba(11, 25, 44, 0.82) 50%, rgba(15, 30, 54, 0.90) 100%);
+    }
+    .badge-gold {
+      background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+      color: #92400e;
+      border: 1px solid #fcd34d;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans selection:bg-forest-600 selection:text-white">
+
+  <!-- Top Global Trade Bar -->
+  <div class="bg-navy-950 text-slate-300 text-xs py-2 px-4 border-b border-navy-850/60 sticky-top">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-2">
+      <div class="flex items-center space-x-6">
+        <span class="flex items-center gap-1.5 text-slate-300 font-medium">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-forest-500"></i>
+          Origin: India &bull; Global Ocean & Air Freight
+        </span>
+        <span class="hidden sm:flex items-center gap-1.5 text-slate-300">
+          <i data-lucide="shield-check" class="w-3.5 h-3.5 text-gold-accent"></i>
+          Export Quality Standardized Sourcing
+        </span>
+      </div>
+      <div class="flex items-center space-x-5">
+        <a href="tel:+918331851746" class="hover:text-white flex items-center gap-1.5 transition-colors font-medium">
+          <i data-lucide="phone-call" class="w-3.5 h-3.5 text-forest-500"></i>
+          +91 8331851746
+        </a>
+        <a href="https://wa.me/918331851746?text=Hello%20ABC%20Exports,%20I%20am%20interested%20in%20sourcing%20products." 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="hover:text-green-400 flex items-center gap-1 transition-colors text-slate-300">
+          <i data-lucide="message-square" class="w-3.5 h-3.5 text-forest-500"></i>
+          WhatsApp Desk
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Header & Navigation -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-sm transition-all duration-200" id="mainHeader">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo -->
+        <a href="#home" class="flex items-center gap-3 group">
+          <div class="w-11 h-11 rounded-xl bg-navy-900 flex items-center justify-center text-white shadow-md shadow-navy-900/10 group-hover:bg-navy-850 transition">
+            <i data-lucide="globe-2" class="w-6 h-6 text-forest-500 group-hover:scale-105 transition-transform"></i>
+          </div>
+          <div>
+            <div class="flex items-center gap-1">
+              <span class="font-heading font-extrabold text-2xl tracking-tight text-navy-900">ABC</span>
+              <span class="font-heading font-light text-2xl tracking-wider text-forest-600">EXPORTS</span>
+            </div>
+            <p class="text-[10px] tracking-widest uppercase font-semibold text-slate-500">Global Trade & Commodities</p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden md:flex items-center space-x-7 font-medium text-sm text-slate-600">
+          <a href="#home" class="text-navy-900 hover:text-forest-600 transition-colors">Home</a>
+          <a href="#about" class="hover:text-forest-600 transition-colors">About Us</a>
+          <a href="#products" class="hover:text-forest-600 transition-colors">Products</a>
+          <a href="#process" class="hover:text-forest-600 transition-colors">Export Process</a>
+          <a href="#why-us" class="hover:text-forest-600 transition-colors">Why Choose Us</a>
+          <a href="#contact" class="hover:text-forest-600 transition-colors">Contact</a>
+        </nav>
+
+        <!-- Action CTA Button -->
+        <div class="hidden md:flex items-center space-x-3">
+          <button onclick="openRFQModal('General Export Inquiry')" class="bg-forest-600 hover:bg-forest-700 text-white font-medium text-sm px-5 py-2.5 rounded-lg shadow-sm hover:shadow transition-all flex items-center gap-2">
+            <span>GET IN TOUCH</span>
+            <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+          </button>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <div class="flex md:hidden">
+          <button id="mobileMenuBtn" aria-label="Toggle Menu" class="p-2.5 rounded-lg text-slate-600 hover:text-navy-900 hover:bg-slate-100 focus:outline-none">
+            <i data-lucide="menu" id="menuOpenIcon" class="w-6 h-6"></i>
+            <i data-lucide="x" id="menuCloseIcon" class="w-6 h-6 hidden"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-slate-200 px-5 pt-3 pb-6 space-y-3">
+      <a href="#home" onclick="closeMobileMenu()" class="block py-2 text-base font-semibold text-navy-900 border-b border-slate-100">Home</a>
+      <a href="#about" onclick="closeMobileMenu()" class="block py-2 text-base font-medium text-slate-700 border-b border-slate-100">About Us</a>
+      <a href="#products" onclick="closeMobileMenu()" class="block py-2 text-base font-medium text-slate-700 border-b border-slate-100">Products</a>
+      <a href="#process" onclick="closeMobileMenu()" class="block py-2 text-base font-medium text-slate-700 border-b border-slate-100">Export Process</a>
+      <a href="#why-us" onclick="closeMobileMenu()" class="block py-2 text-base font-medium text-slate-700 border-b border-slate-100">Why Choose Us</a>
+      <a href="#contact" onclick="closeMobileMenu()" class="block py-2 text-base font-medium text-slate-700 border-b border-slate-100">Contact</a>
+      <div class="pt-2">
+        <button onclick="closeMobileMenu(); openRFQModal('General Export Inquiry')" class="w-full text-center bg-forest-600 text-white font-semibold py-3 rounded-lg shadow">
+          GET IN TOUCH
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="relative bg-navy-900 text-white min-h-[640px] flex items-center overflow-hidden">
+      <!-- Background Image with Overlay -->
+      <div class="absolute inset-0 z-0">
+        <img 
+          src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=2000&q=80" 
+          alt="International Cargo Ship & Logistics" 
+          class="w-full h-full object-cover object-center opacity-25"
+          loading="eager"
+        />
+        <div class="absolute inset-0 hero-gradient"></div>
+      </div>
+
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+        <div class="max-w-3xl">
+          
+          <!-- Origin Tagline / Trust Line -->
+          <div class="inline-flex items-center gap-2 bg-navy-850/80 border border-slate-700/60 rounded-full px-4 py-1.5 mb-6 backdrop-blur-sm">
+            <span class="w-2 h-2 rounded-full bg-forest-500 animate-pulse"></span>
+            <span class="text-xs uppercase font-semibold tracking-wider text-slate-200">
+              India <span class="text-gold-400 font-bold">&rarr;</span> Global Markets
+            </span>
+            <span class="text-xs text-slate-400 border-l border-slate-600 pl-2">Reliable Bulk Supply</span>
+          </div>
+
+          <!-- Main Heading -->
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-heading font-extrabold tracking-tight text-white leading-tight mb-6">
+            QUALITY PRODUCTS. <br />
+            GLOBAL MARKETS. <br />
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-forest-500">TRUSTED EXPORTS.</span>
+          </h1>
+
+          <!-- Supporting Text -->
+          <p class="text-lg sm:text-xl text-slate-300 font-normal leading-relaxed mb-8 max-w-2xl">
+            ABC EXPORTS connects quality products from India with buyers and businesses across international markets. Committed to integrity, verified sourcing, and on-time shipment execution.
+          </p>
+
+          <!-- Call to Action Buttons -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+            <a href="#products" class="inline-flex items-center justify-center gap-2 bg-forest-600 hover:bg-forest-700 text-white font-semibold px-7 py-3.5 rounded-lg shadow-lg shadow-forest-900/30 transition">
+              <span>EXPLORE PRODUCTS</span>
+              <i data-lucide="chevron-right" class="w-4 h-4"></i>
+            </a>
+            <a href="#contact" class="inline-flex items-center justify-center gap-2 bg-slate-800/80 hover:bg-slate-800 text-white border border-slate-600 font-semibold px-7 py-3.5 rounded-lg hover:border-slate-400 transition">
+              <span>CONTACT US</span>
+            </a>
+          </div>
+
+          <!-- Trust Badges Strip -->
+          <div class="mt-12 pt-8 border-t border-slate-700/60 grid grid-cols-2 sm:grid-cols-3 gap-4 text-slate-300 text-xs">
+            <div class="flex items-center gap-2.5">
+              <div class="p-2 rounded bg-navy-850 border border-slate-700 text-forest-500">
+                <i data-lucide="check-circle" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <p class="font-semibold text-white">Direct Farm Sourcing</p>
+                <p class="text-slate-400">Strict Quality Screening</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <div class="p-2 rounded bg-navy-850 border border-slate-700 text-gold-400">
+                <i data-lucide="package-check" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <p class="font-semibold text-white">Export-Ready Packing</p>
+                <p class="text-slate-400">Palletized & Containerized</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2.5 col-span-2 sm:col-span-1">
+              <div class="p-2 rounded bg-navy-850 border border-slate-700 text-teal-400">
+                <i data-lucide="ship" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <p class="font-semibold text-white">Ocean & Air Logistics</p>
+                <p class="text-slate-400">Complete Port Documentation</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-20 bg-white border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <!-- Text Narrative -->
+          <div class="lg:col-span-6 space-y-6">
+            <div class="inline-flex items-center gap-1.5 text-xs font-bold tracking-wider uppercase text-forest-700 bg-forest-50 px-3 py-1 rounded-full border border-forest-100">
+              <i data-lucide="building-2" class="w-3.5 h-3.5"></i>
+              Corporate Overview
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-navy-900 tracking-tight">
+              ABOUT ABC EXPORTS
+            </h2>
+            <p class="text-slate-600 text-lg leading-relaxed">
+              ABC EXPORTS is an India-based export and trading company focused on connecting quality products with international buyers. We aim to build reliable business relationships through consistent quality, transparent communication, and professional export handling.
+            </p>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Operating with an international perspective, we bridge the gap between India's rich agricultural hubs and global market standards. From initial sample approval to final customs loading, our operational protocols ensure seamless trade execution for importers, wholesalers, and food distributors.
+            </p>
+
+            <!-- Key pillars list -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
+              <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                <div class="w-9 h-9 rounded-lg bg-emerald-100 text-forest-700 flex items-center justify-center mb-3">
+                  <i data-lucide="shield" class="w-5 h-5"></i>
+                </div>
+                <h3 class="font-bold text-navy-900 text-sm mb-1">Quality Focus</h3>
+                <p class="text-xs text-slate-500 leading-normal">Carefully selected products with a focus on quality.</p>
+              </div>
+
+              <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                <div class="w-9 h-9 rounded-lg bg-blue-100 text-navy-900 flex items-center justify-center mb-3">
+                  <i data-lucide="messages-square" class="w-5 h-5"></i>
+                </div>
+                <h3 class="font-bold text-navy-900 text-sm mb-1">Reliable Communication</h3>
+                <p class="text-xs text-slate-500 leading-normal">Clear communication with buyers throughout the process.</p>
+              </div>
+
+              <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                <div class="w-9 h-9 rounded-lg bg-amber-100 text-gold-600 flex items-center justify-center mb-3">
+                  <i data-lucide="globe" class="w-5 h-5"></i>
+                </div>
+                <h3 class="font-bold text-navy-900 text-sm mb-1">Global Business</h3>
+                <p class="text-xs text-slate-500 leading-normal">Connecting Indian products with international markets.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visual Showcase Card -->
+          <div class="lg:col-span-6">
+            <div class="relative">
+              <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-200">
+                <img 
+                  src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1000&q=80" 
+                  alt="Warehouse packaging and quality inspection" 
+                  class="w-full h-96 object-cover"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-navy-950/85 via-transparent to-transparent flex items-end p-6">
+                  <div class="text-white">
+                    <p class="text-xs text-emerald-400 font-semibold uppercase tracking-wider">Trusted International Partner</p>
+                    <p class="text-lg font-heading font-bold">Standardized Testing & Export Documentation</p>
+                    <p class="text-xs text-slate-300 mt-1">Phytosanitary certification, Certificate of Origin, and container inspection ready.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Floating stat badge -->
+              <div class="absolute -top-4 -right-4 sm:top-6 sm:-left-6 bg-white p-4 rounded-xl shadow-xl border border-slate-100 hidden sm:flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-forest-600 text-white flex items-center justify-center">
+                  <i data-lucide="check" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <p class="text-xs font-bold text-navy-900">100% Quality Assured</p>
+                  <p class="text-[11px] text-slate-500">Graded as per buyer specifications</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PRODUCTS SECTION -->
+    <section id="products" class="py-20 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <div class="inline-flex items-center gap-1.5 text-xs font-bold tracking-wider uppercase text-forest-700 bg-forest-50 px-3 py-1 rounded-full border border-forest-100 mb-3">
+            <i data-lucide="boxes" class="w-3.5 h-3.5"></i>
+            Export Portfolio
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-navy-900 tracking-tight">
+            OUR PRODUCTS
+          </h2>
+          <p class="text-slate-600 mt-3 text-base">
+            Agricultural commodities and fresh farm produce sourced from accredited Indian growing regions, sorted, graded, and packaged for worldwide export.
+          </p>
+        </div>
+
+        <!-- Category Filter Tabs -->
+        <div class="flex flex-wrap items-center justify-center gap-2 mb-10">
+          <button onclick="filterProducts('all')" class="category-btn active px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-colors bg-navy-900 text-white" data-cat="all">
+            All Products
+          </button>
+          <button onclick="filterProducts('spices-staples')" class="category-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-colors bg-white text-slate-700 border border-slate-200 hover:border-navy-900" data-cat="spices-staples">
+            Rice & Spices
+          </button>
+          <button onclick="filterProducts('fresh-produce')" class="category-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-colors bg-white text-slate-700 border border-slate-200 hover:border-navy-900" data-cat="fresh-produce">
+            Fresh Produce & Fruits
+          </button>
+          <button onclick="filterProducts('banana')" class="category-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-colors bg-white text-slate-700 border border-slate-200 hover:border-navy-900" data-cat="banana">
+            Banana Products
+          </button>
+          <button onclick="filterProducts('custom')" class="category-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-colors bg-white text-slate-700 border border-slate-200 hover:border-navy-900" data-cat="custom">
+            Custom Sourcing
+          </button>
+        </div>
+
+        <!-- Product Grid -->
+        <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          <!-- Card 1: Rice -->
+          <div class="product-item bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-category="spices-staples">
+            <div>
+              <div class="relative h-48 overflow-hidden bg-slate-100">
+                <img 
+                  src="https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=700&q=80" 
+                  alt="Export Quality Rice" 
+                  class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+                <span class="absolute top-3 left-3 bg-navy-900/80 backdrop-blur-sm text-white text-[11px] font-semibold px-2.5 py-1 rounded-md">
+                  Agricultural Staple
+                </span>
+              </div>
+              <div class="p-5">
+                <h3 class="font-heading font-bold text-lg text-navy-900 mb-1.5">Indian Rice</h3>
+                <p class="text-xs text-slate-500 mb-3 leading-relaxed">
+                  Long-grain Basmati and Non-Basmati (IR64, Sona Masoori, Parboiled) cleaned, sorted, and packaged in customized PP or jute bags.
+                </p>
+                <div class="text-[11px] text-slate-600 flex flex-wrap gap-1.5 mb-2 font-medium">
+                  <span class="bg-slate-100 px-2 py-0.5 rounded">Basmati &amp; Non-Basmati</span>
+                  <span class="bg-slate-100 px-2 py-0.5 rounded">Bulk / Containerized</span>
+                </div>
+              </div>
+            </div>
+            <div class="p-5 pt-0">
+              <button onclick="openRFQModal('Indian Rice')" class="w-full bg-slate-100 hover:bg-forest-600 hover:text-white text-navy-900 font-semibold text-xs py-2.5 rounded-lg border border-slate-200 transition-colors flex items-center justify-center gap-1.5">
+                <i data-lucide="mail" class="w-3.5 h-3.5"></i>
+                <span>Send Inquiry</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 2: Banana Products -->
+          <div class="product-item bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-category="banana">
+            <div>
+              <div class="relative h-48 overflow-hidden bg-slate-100">
+                <img 
+                  src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?auto=format&fit=crop&w=700&q=80" 
+                  alt="Banana Products" 
+                  class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+                <span class="absolute top-3 left-3 bg-navy-900/80 backdrop-blur-sm text-white text-[11px] font-semibold px-2.5 py-1 rounded-md">
+                  Fresh &amp; Value-Added
+                </span>
+              </div>
+              <div class="p-5">
+                <h3 class="font-heading font-bold text-lg text-navy-900 mb-1.5">Banana Products</h3>
+                <p class="text-xs text-slate-500 mb-3 leading-relaxed">
+                  Export-grade G9 Cavendish green/yellow bananas, vacuum-sealed banana chips, natural banana powder, and processed derivatives.
+                </p>
+                <div class="text-[11px] text-slate-600 flex flex-wrap gap-1.5 mb-2 font-medium">
+                  <span class="bg-slate-100 px-2 py-0.5 rounded">G9 Cavendish</span>
+                  <span class="bg-slate-100 px-2 py-0.5 rounded">Reefer Containers</span>
+                </div>
+              </div>
+            </div>
+            <div class="p-5 pt-0">
+              <button onclick="openRFQModal('Banana Products')" class="w-full bg-slate-100 hover:bg-forest-600 hover:text-white text-navy-900 font-semibold text-xs py-2.5 rounded-lg border border-slate-200 transition-colors flex items-center justify-center gap-1.5">
+                <i data-lucide="mail" class="w-3.5 h-3.5"></i>
+                <span>Send Inquiry</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 3: Ginger -->
+          <div class="product-item bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-category="fresh-produce">
+            <div>
+              <div class="relative h-48 overflow-hidden bg-slate-100">
+                <img 
+                  src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=700&q=80" 
+                  alt="Fresh Ginger" 
+                  class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+                <span class="absolute top-3 left-3 bg-navy-900/80 backdrop-blur-sm text-white text-[11px] font-semibold px-2.5 py-1 rounded-md">
+                  Fresh Produce
+                </span>
+              </div>
+              <div class="p-5">
+                <h3 class="font-heading font-bold text-lg text-navy-900 mb-1.5">Fresh &amp; Dry Ginger</h3>
+                <p class="text-xs text-slate-500 mb-3 leading-relaxed">
+                  Plump, washed, and sun-dried ginger rhizomes with pungent aroma and high gingerol content. Mesh bags and carton packaging.
+                </p>
+                <div class="text-[11px] text-slate-600 flex flex-wrap gap-1.5 mb-2 font-medium">
+                  <span class="bg-slate-100 px-2 py-0.5 rounded">Washed / Dry</span>
+                  <span class="bg-slate-100 px-2 py-0.5 rounded">High Pungency</span>
+                </div>
+              </div>
+            </div>
+            <div class="p-5 pt-0">
+              <button onclick="openRFQModal('Fresh and Dry Ginger')" class="w-full bg-slate-100 hover:bg-forest-600 hover:text-white text-navy-900 font-semibold text-xs py-2.5 rounded-lg border border-slate-200 transition-colors flex items-center justify-center gap-1.5">
+                <i data-lucide="mail" class="w-3.5 h-3.5"></i>
+                <span>Send Inquiry</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 4: Garlic -->
+          <div class="product-item bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-category="fresh-produce">
+            <div>
+              <div class="relative h-48 overflow-hidden bg-slate-100">
+                <img 
+                  src="https://images.unsplash.com/photo-1540148426945-6cf22a6b2383?auto=format&fit=crop&w=700&q=80" 
+                  alt="Garlic Bulbs" 
+                  class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+                <span class="absolute top-3 left-3 bg-navy-900/80 backdrop-blur-sm text-white text-[11px] font-semibold px-2.5 py-1 rounded-md">
+                  Fresh Produce
+                </span>
+              </div>
+              <div class="p-5">
+                <h3 class="font-heading font-bold text-lg text-navy-900 mb-1.5">Indian Garlic</h3>
+                <p class="text-xs text-slate-500 mb-3 leading-relaxed">
+                  Cleaned, sun-cured white garlic bulbs with tight cloves. Sized accurately from 25mm to 45mm+ in aerated mesh bags.
+                </p>
+                <div class="text-[11px] text-slate-600 flex flex-wrap gap-1.5 mb-2 font-medium">
+                  <span class="bg-slate-100 px-2 py-0.5 rounded">30-45mm Graded</span>
+                  <span class="bg-slate-100 px-2 py-0.5 rounded">Mesh Bags</span>
+                </div>
+              </div>
+            </div>
+            <div class="p-5 pt-0">
+              <button onclick="openRFQModal('Indian Garlic')" class="w-full bg-slate-100 hover:bg-forest-600 hover:text-white text-navy-900 font-semibold text-xs py-2.5 rounded-lg border border-slate-200 transition-colors flex items-center justify-center gap-1.5">
+                <i data-lucide="mail" class="w-3.5 h-3.5"></i>
+                <span>Send Inquiry</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 5: Onions -->
+          <div class="product-item bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-category="fresh-produce">
+            <div>
+              <div class="relative h-48 overflow-hidden bg-slate-100">
+                <img 
+                  src="https://images.unsplash.com/photo-1518977956812-cd3dbadaaf31?auto=format&fit=crop&w=700&q=80" 
+                  alt="Red & Pink Onions" 
+                  class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+                <span class="absolute top-3 left-3 bg-navy-900/80 backdrop-blur-sm text-white text-[11px] font-semibold px-2.5 py-1 rounded-md">
+                  Fresh Produce
+                </span>
+              </div>
+              <div class="p-5">
+                <h3 class="font-heading font-bold text-lg text-navy-900 mb-1.5">Red &amp; Pink Onions</h3>
+                <p class="text-xs text-slate-500 mb-3 leading-relaxed">
+                  Premium quality Nasik / South Indian red onions. Known for firm texture, high shelf life, and distinct pungent flavor.
+                </p>
+                <div class="text-[11px] text-slate-600 flex flex-wrap gap-1.5 mb-2 font-medium">
+                  <span class="bg-slate-100 px-2 py-0.5 rounded">40mm - 60mm+</span>
+                  <span class="bg-slate-100 px-2 py-0.5 rounded">Well Cured</span>
+                </div>
+              </div>
+            </div>
+            <div class="p-5 pt-0">
+              <button onclick="openRFQModal('Red & Pink Onions')" class="w-full bg-slate-100 hover:bg-forest-600 hover:text-white text-navy-900 font-semibold text-xs py-2.5 rounded-lg border border-slate-200 transition-colors flex items-center justify-center gap-1.5">
+                <i data-lucide="mail" class="w-3.5 h-3.5"></i>
+                <span>Send Inquiry</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 6: Spices -->
+          <div class="product-item bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-category="spices-staples">
+            <div>
+              <div class="relative h-48 overflow-hidden bg-slate-100">
+                <img 
+                  src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=700&q=80" 
+                  alt="Indian Whole Spices" 
+                  class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+                <span class="absolute top-3 left-3 bg-navy-900/80 backdrop-blur-sm text-white text-[11px] font-semibold px-2.5 py-1 rounded-md">
+                  Premium Spices
+                </span>
+              </div>
+              <div class="p-5">
+                <h3 class="font-heading font-bold text-lg text-navy-900 mb-1.5">Indian Spices</h3>
+                <p class="text-xs text-slate-500 mb-3 leading-relaxed">
+                  Whole and ground spices including Turmeric fingers, Cumin seeds, Coriander, Red Chili (Stemless/Sananam), and Green Cardamom.
+                </p>
+                <div class="text-[11px] text-slate-600 flex flex-wrap gap-1.5 mb-2 font-medium">
+                  <span class="bg-slate-100 px-2 py-0.5 rounded">Turmeric &bull; Chili</span>
+                  <span class="bg-slate-100 px-2 py-0.5 rounded">High Curcumin / ASTA</span>
+                </div>
+              </div>
+            </div>
+            <div class="p-5 pt-0">
+              <button onclick="openRFQModal('Indian Spices')" class="w-full bg-slate-100 hover:bg-forest-600 hover:text-white text-navy-900 font-semibold text-xs py-2.5 rounded-lg border border-slate-200 transition-colors flex items-center justify-center gap-1.5">
+                <i data-lucide="mail" class="w-3.5 h-3.5"></i>
+                <span>Send Inquiry</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 7: Fruits -->
+          <div class="product-item bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-category="fresh-produce">
+            <div>
+              <div class="relative h-48 overflow-hidden bg-slate-100">
+                <img 
+                  src="https://images.unsplash.com/photo-1553279768-865429fa0078?auto=format&fit=crop&w=700&q=80" 
+                  alt="Fresh Tropical Fruits" 
+                  class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+                <span class="absolute top-3 left-3 bg-navy-900/80 backdrop-blur-sm text-white text-[11px] font-semibold px-2.5 py-1 rounded-md">
+                  Tropical Fruits
+                </span>
+              </div>
+              <div class="p-5">
+                <h3 class="font-heading font-bold text-lg text-navy-900 mb-1.5">Tropical Fruits</h3>
+                <p class="text-xs text-slate-500 mb-3 leading-relaxed">
+                  Seasonal export fruits including Alphonso &amp; Kesar Mangoes, Bhagwa Pomegranates, Fresh Papaya, and Seedless Grapes.
+                </p>
+                <div class="text-[11px] text-slate-600 flex flex-wrap gap-1.5 mb-2 font-medium">
+                  <span class="bg-slate-100 px-2 py-0.5 rounded">Air / Sea Reefer</span>
+                  <span class="bg-slate-100 px-2 py-0.5 rounded">Global GAP Standards</span>
+                </div>
+              </div>
+            </div>
+            <div class="p-5 pt-0">
+              <button onclick="openRFQModal('Tropical Fruits')" class="w-full bg-slate-100 hover:bg-forest-600 hover:text-white text-navy-900 font-semibold text-xs py-2.5 rounded-lg border border-slate-200 transition-colors flex items-center justify-center gap-1.5">
+                <i data-lucide="mail" class="w-3.5 h-3.5"></i>
+                <span>Send Inquiry</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 8: Natural & Agro Commodities -->
+          <div class="product-item bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-category="spices-staples">
+            <div>
+              <div class="relative h-48 overflow-hidden bg-slate-100">
+                <img 
+                  src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=700&q=80" 
+                  alt="Natural and Agro Commodities" 
+                  class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+                <span class="absolute top-3 left-3 bg-navy-900/80 backdrop-blur-sm text-white text-[11px] font-semibold px-2.5 py-1 rounded-md">
+                  Agro Commodities
+                </span>
+              </div>
+              <div class="p-5">
+                <h3 class="font-heading font-bold text-lg text-navy-900 mb-1.5">Natural &amp; Agro Commodities</h3>
+                <p class="text-xs text-slate-500 mb-3 leading-relaxed">
+                  Pulses, oilseeds, sesame seeds, corn, and customized agricultural commodities directly sourced from farmer networks.
+                </p>
+                <div class="text-[11px] text-slate-600 flex flex-wrap gap-1.5 mb-2 font-medium">
+                  <span class="bg-slate-100 px-2 py-0.5 rounded">Bulk Shipments</span>
+                  <span class="bg-slate-100 px-2 py-0.5 rounded">FOB / CIF Options</span>
+                </div>
+              </div>
+            </div>
+            <div class="p-5 pt-0">
+              <button onclick="openRFQModal('Natural & Agro Commodities')" class="w-full bg-slate-100 hover:bg-forest-600 hover:text-white text-navy-900 font-semibold text-xs py-2.5 rounded-lg border border-slate-200 transition-colors flex items-center justify-center gap-1.5">
+                <i data-lucide="mail" class="w-3.5 h-3.5"></i>
+                <span>Send Inquiry</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Custom Sourcing Highlight Box -->
+        <div id="customSourcingCard" class="product-item mt-10 rounded-2xl bg-gradient-to-r from-navy-900 via-navy-850 to-navy-900 text-white p-8 md:p-10 border border-navy-850 shadow-xl relative overflow-hidden" data-category="custom">
+          <div class="absolute -right-10 -bottom-10 opacity-10 pointer-events-none">
+            <i data-lucide="container" class="w-80 h-80"></i>
+          </div>
+          
+          <div class="max-w-2xl relative z-10">
+            <div class="inline-flex items-center gap-1.5 text-xs font-semibold text-gold-400 bg-navy-950/70 px-3 py-1 rounded-full border border-gold-500/30 mb-4">
+              <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+              Tailored Sourcing Solutions
+            </div>
+            <h3 class="text-2xl sm:text-3xl font-heading font-extrabold tracking-tight mb-3">
+              Looking for a Specific Product from India?
+            </h3>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
+              Contact us to discuss your requirements. If you have custom packaging parameters, specific grade tolerances, or unique Indian commodity demands, our procurement team will structure a reliable supply pipeline.
+            </p>
+            <div class="flex flex-wrap items-center gap-4">
+              <button onclick="openRFQModal('Custom Sourcing Product')" class="bg-forest-600 hover:bg-forest-700 text-white font-semibold text-sm px-6 py-3 rounded-lg transition-colors flex items-center gap-2">
+                <span>Discuss Custom Requirements</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </button>
+              <a href="https://wa.me/918331851746?text=Hello%20ABC%20Exports,%20I%20have%20a%20custom%20export%20sourcing%20requirement." 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 class="bg-navy-950/80 hover:bg-navy-950 border border-slate-700 text-slate-200 text-sm font-semibold px-5 py-3 rounded-lg transition-colors flex items-center gap-2">
+                <i data-lucide="message-circle" class="w-4 h-4 text-emerald-400"></i>
+                <span>Quick WhatsApp Chat</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EXPORT PROCESS SECTION -->
+    <section id="process" class="py-20 bg-white border-y border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="inline-flex items-center gap-1.5 text-xs font-bold tracking-wider uppercase text-forest-700 bg-forest-50 px-3 py-1 rounded-full border border-forest-100 mb-3">
+            <i data-lucide="git-commit" class="w-3.5 h-3.5"></i>
+            Operational Workflow
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-navy-900 tracking-tight">
+            HOW WE WORK
+          </h2>
+          <p class="text-slate-600 mt-3 text-base">
+            A disciplined 5-step export handling process designed to ensure complete transparency, documentation accuracy, and timely port dispatch.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-6 relative">
+          
+          <!-- Step 1 -->
+          <div class="bg-slate-50 border border-slate-200 p-6 rounded-2xl relative flex flex-col justify-between hover:border-forest-600 transition-colors">
+            <div>
+              <div class="text-xs font-mono font-bold text-forest-700 bg-forest-100 w-fit px-2.5 py-1 rounded-md mb-4">
+                STEP 01
+              </div>
+              <h3 class="font-heading font-bold text-lg text-navy-900 mb-2">Inquiry</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Buyer sends product specifications, desired quantity, and destination port requirements.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-200/80 flex items-center gap-2 text-slate-400 text-xs">
+              <i data-lucide="file-text" class="w-4 h-4 text-navy-900"></i>
+              <span>RFQ Review</span>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="bg-slate-50 border border-slate-200 p-6 rounded-2xl relative flex flex-col justify-between hover:border-forest-600 transition-colors">
+            <div>
+              <div class="text-xs font-mono font-bold text-forest-700 bg-forest-100 w-fit px-2.5 py-1 rounded-md mb-4">
+                STEP 02
+              </div>
+              <h3 class="font-heading font-bold text-lg text-navy-900 mb-2">Product Discussion</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                We review technical grades, custom packaging specs, target delivery schedules, and port logistics.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-200/80 flex items-center gap-2 text-slate-400 text-xs">
+              <i data-lucide="check-square" class="w-4 h-4 text-navy-900"></i>
+              <span>Spec Alignment</span>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="bg-slate-50 border border-slate-200 p-6 rounded-2xl relative flex flex-col justify-between hover:border-forest-600 transition-colors">
+            <div>
+              <div class="text-xs font-mono font-bold text-forest-700 bg-forest-100 w-fit px-2.5 py-1 rounded-md mb-4">
+                STEP 03
+              </div>
+              <h3 class="font-heading font-bold text-lg text-navy-900 mb-2">Quotation &amp; Terms</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Clear and competitive FOB or CIF quotation, Incoterms confirmation, contract signing, and payment terms.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-200/80 flex items-center gap-2 text-slate-400 text-xs">
+              <i data-lucide="scale" class="w-4 h-4 text-navy-900"></i>
+              <span>FOB / CIF Pricing</span>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="bg-slate-50 border border-slate-200 p-6 rounded-2xl relative flex flex-col justify-between hover:border-forest-600 transition-colors">
+            <div>
+              <div class="text-xs font-mono font-bold text-forest-700 bg-forest-100 w-fit px-2.5 py-1 rounded-md mb-4">
+                STEP 04
+              </div>
+              <h3 class="font-heading font-bold text-lg text-navy-900 mb-2">QC &amp; Packaging</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Meticulous quality control, lab/phytosanitary checks, export labeling, and container loading supervision.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-200/80 flex items-center gap-2 text-slate-400 text-xs">
+              <i data-lucide="shield-alert" class="w-4 h-4 text-navy-900"></i>
+              <span>Inspection Passed</span>
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="bg-slate-50 border border-slate-200 p-6 rounded-2xl relative flex flex-col justify-between hover:border-forest-600 transition-colors">
+            <div>
+              <div class="text-xs font-mono font-bold text-forest-700 bg-forest-100 w-fit px-2.5 py-1 rounded-md mb-4">
+                STEP 05
+              </div>
+              <h3 class="font-heading font-bold text-lg text-navy-900 mb-2">Shipment &amp; Delivery</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Customs clearance, Bill of Lading (BL) issuance, cargo tracking updates, and safe delivery to your port.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-200/80 flex items-center gap-2 text-slate-400 text-xs">
+              <i data-lucide="navigation" class="w-4 h-4 text-navy-900"></i>
+              <span>Port Dispatch</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US SECTION -->
+    <section id="why-us" class="py-20 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-5">
+            <div class="inline-flex items-center gap-1.5 text-xs font-bold tracking-wider uppercase text-forest-700 bg-forest-50 px-3 py-1 rounded-full border border-forest-100 mb-3">
+              <i data-lucide="award" class="w-3.5 h-3.5"></i>
+              Buyer Value Proposition
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-navy-900 tracking-tight mb-4">
+              WHY CHOOSE ABC EXPORTS?
+            </h2>
+            <p class="text-slate-600 leading-relaxed text-sm mb-6">
+              In international trade, reliability is non-negotiable. Overseas buyers choose ABC EXPORTS for our transparent business conduct, meticulous attention to export documentation, and strict adherence to agreed product grades.
+            </p>
+
+            <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-forest-50 text-forest-700 flex items-center justify-center shrink-0">
+                <i data-lucide="phone-forwarded" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <p class="text-xs font-semibold text-slate-500 uppercase tracking-wide">Direct Export Line</p>
+                <a href="tel:+918331851746" class="text-base font-bold text-navy-900 hover:text-forest-700 transition">
+                  +91 8331851746
+                </a>
+                <p class="text-[11px] text-slate-500">Available for calls &amp; WhatsApp inquiries</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4 Pillars Grid -->
+          <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-5">
+            
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow transition-shadow">
+              <div class="w-10 h-10 rounded-lg bg-navy-900 text-white flex items-center justify-center mb-4">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-forest-500"></i>
+              </div>
+              <h3 class="font-heading font-bold text-navy-900 text-base mb-2">Verified Sourcing</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Direct connections with verified agricultural producers and certified grading centers across India to eliminate middlemen inflation.
+              </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow transition-shadow">
+              <div class="w-10 h-10 rounded-lg bg-navy-900 text-white flex items-center justify-center mb-4">
+                <i data-lucide="file-check" class="w-5 h-5 text-gold-400"></i>
+              </div>
+              <h3 class="font-heading font-bold text-navy-900 text-base mb-2">Export Documentation</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Complete compliance: Certificate of Origin, Phytosanitary Certificate, Bill of Lading, Commercial Invoices, and SGS / third-party inspection upon request.
+              </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow transition-shadow">
+              <div class="w-10 h-10 rounded-lg bg-navy-900 text-white flex items-center justify-center mb-4">
+                <i data-lucide="box" class="w-5 h-5 text-emerald-400"></i>
+              </div>
+              <h3 class="font-heading font-bold text-navy-900 text-base mb-2">Standardized Packaging</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Export-compliant packaging: ventilated corrugated boxes, vacuum bags, jute sacks, and moisture-controlled reefer container packing.
+              </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow transition-shadow">
+              <div class="w-10 h-10 rounded-lg bg-navy-900 text-white flex items-center justify-center mb-4">
+                <i data-lucide="anchor" class="w-5 h-5 text-teal-400"></i>
+              </div>
+              <h3 class="font-heading font-bold text-navy-900 text-base mb-2">Timely Port Dispatch</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Coordinated shipping schedules with trusted freight forwarders operating out of major Indian sea ports and air cargo hubs.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          
+          <!-- Contact Details Column -->
+          <div class="lg:col-span-5 space-y-6">
+            <div class="inline-flex items-center gap-1.5 text-xs font-bold tracking-wider uppercase text-forest-700 bg-forest-50 px-3 py-1 rounded-full border border-forest-100">
+              <i data-lucide="mail-check" class="w-3.5 h-3.5"></i>
+              Communication Channel
+            </div>
+            
+            <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-navy-900 tracking-tight">
+              GET IN TOUCH
+            </h2>
+            
+            <p class="text-slate-600 text-sm leading-relaxed">
+              We welcome trade inquiries from international importers, distributors, food processors, and trading houses. Reach out today for formal quotations, product specifications, and sample dispatch details.
+            </p>
+
+            <div class="space-y-4 pt-2">
+              
+              <!-- Phone -->
+              <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-200">
+                <div class="w-10 h-10 rounded-lg bg-forest-100 text-forest-700 flex items-center justify-center shrink-0">
+                  <i data-lucide="phone" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <p class="text-xs font-semibold text-slate-500 uppercase">Telephone / Direct Line</p>
+                  <a href="tel:+918331851746" class="text-base font-bold text-navy-900 hover:text-forest-700 transition">
+                    +91 8331851746
+                  </a>
+                  <p class="text-[11px] text-slate-500">Official business inquiries (Voice &amp; WhatsApp)</p>
+                </div>
+              </div>
+
+              <!-- WhatsApp Direct -->
+              <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-200">
+                <div class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0">
+                  <i data-lucide="message-square" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <p class="text-xs font-semibold text-slate-500 uppercase">Instant WhatsApp Chat</p>
+                  <a href="https://wa.me/918331851746?text=Hello%20ABC%20Exports,%20I%20am%20interested%20in%20discussing%20an%20export%20inquiry." 
+                     target="_blank" 
+                     rel="noopener noreferrer" 
+                     class="text-base font-bold text-navy-900 hover:text-emerald-700 transition">
+                    Connect on WhatsApp
+                  </a>
+                  <p class="text-[11px] text-slate-500">Fast overseas response within 24 hours</p>
+                </div>
+              </div>
+
+              <!-- Location / Country of Origin -->
+              <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-200">
+                <div class="w-10 h-10 rounded-lg bg-navy-100 text-navy-900 flex items-center justify-center shrink-0">
+                  <i data-lucide="map-pin" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <p class="text-xs font-semibold text-slate-500 uppercase">Country of Origin</p>
+                  <p class="text-sm font-bold text-navy-900">India</p>
+                  <p class="text-[11px] text-slate-500">Major Port Clearances: JNPT, Mundra, Chennai, Visakhapatnam</p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Assurance Callout -->
+            <div class="p-4 rounded-xl bg-amber-50 border border-amber-200 text-amber-900 text-xs flex items-center gap-3">
+              <i data-lucide="clock" class="w-5 h-5 text-amber-600 shrink-0"></i>
+              <span><strong>Prompt Response:</strong> All buyer inquiries are attended to with formal specifications and quotation guidelines within 24 hours.</span>
+            </div>
+
+          </div>
+
+          <!-- Contact / RFQ Form Column -->
+          <div class="lg:col-span-7">
+            <div class="bg-slate-50 border border-slate-200 p-8 rounded-2xl shadow-sm">
+              <h3 class="font-heading font-bold text-xl text-navy-900 mb-2">Request an Export Quote</h3>
+              <p class="text-xs text-slate-500 mb-6">Fill in your requirements below and our international trade desk will follow up promptly.</p>
+
+              <form id="contactForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1.5" for="senderName">Buyer / Company Name *</label>
+                    <input 
+                      type="text" 
+                      id="senderName" 
+                      required 
+                      placeholder="e.g. Global Foods Trading Ltd." 
+                      class="w-full text-sm px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-forest-600 focus:border-forest-600 outline-none bg-white transition"
+                    />
+                  </div>
+
+                  <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1.5" for="senderEmail">Email Address *</label>
+                    <input 
+                      type="email" 
+                      id="senderEmail" 
+                      required 
+                      placeholder="buyer@company.com" 
+                      class="w-full text-sm px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-forest-600 focus:border-forest-600 outline-none bg-white transition"
+                    />
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1.5" for="senderPhone">Phone / WhatsApp Number *</label>
+                    <input 
+                      type="tel" 
+                      id="senderPhone" 
+                      required 
+                      placeholder="+Country Code & Number" 
+                      class="w-full text-sm px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-forest-600 focus:border-forest-600 outline-none bg-white transition"
+                    />
+                  </div>
+
+                  <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1.5" for="productInterest">Product of Interest *</label>
+                    <select 
+                      id="productInterest" 
+                      class="w-full text-sm px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-forest-600 focus:border-forest-600 outline-none bg-white transition"
+                    >
+                      <option value="Indian Rice">Indian Rice (Basmati / Non-Basmati)</option>
+                      <option value="Banana Products">Banana Products (Fresh / Chips)</option>
+                      <option value="Ginger">Fresh &amp; Dry Ginger</option>
+                      <option value="Garlic">Indian Garlic</option>
+                      <option value="Onions">Red &amp; Pink Onions</option>
+                      <option value="Indian Spices">Indian Spices (Turmeric, Chili, Cumin)</option>
+                      <option value="Fruits">Tropical Fresh Fruits</option>
+                      <option value="Natural Commodities">Natural &amp; Agro Commodities</option>
+                      <option value="Custom Sourcing">Custom Product Requirement</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1.5" for="estimatedQuantity">Estimated Quantity (Tons / Containers)</label>
+                    <input 
+                      type="text" 
+                      id="estimatedQuantity" 
+                      placeholder="e.g., 2 x 40ft FCL / 50 MT" 
+                      class="w-full text-sm px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-forest-600 focus:border-forest-600 outline-none bg-white transition"
+                    />
+                  </div>
+
+                  <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1.5" for="destinationPort">Destination Port &amp; Country</label>
+                    <input 
+                      type="text" 
+                      id="destinationPort" 
+                      placeholder="e.g., Jebel Ali, Dubai / Rotterdam" 
+                      class="w-full text-sm px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-forest-600 focus:border-forest-600 outline-none bg-white transition"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 mb-1.5" for="inquiryDetails">Detailed Specifications / Notes</label>
+                  <textarea 
+                    id="inquiryDetails" 
+                    rows="3" 
+                    placeholder="Specify preferred packing, target FOB/CIF requirements, or custom specifications..." 
+                    class="w-full text-sm px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-forest-600 focus:border-forest-600 outline-none bg-white transition"
+                  ></textarea>
+                </div>
+
+                <!-- Submission notification message box -->
+                <div id="formFeedback" class="hidden p-3 rounded-lg text-xs font-medium"></div>
+
+                <div class="pt-2">
+                  <button 
+                    type="submit" 
+                    id="submitBtn" 
+                    class="w-full bg-forest-600 hover:bg-forest-700 text-white font-semibold py-3 rounded-lg shadow-sm hover:shadow transition-all flex items-center justify-center gap-2"
+                  >
+                    <span>SUBMIT INQUIRY</span>
+                    <i data-lucide="send" class="w-4 h-4"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-navy-950 text-slate-400 text-sm border-t border-navy-850">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        
+        <!-- Company Info -->
+        <div class="md:col-span-1 space-y-4">
+          <div class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-lg bg-navy-850 flex items-center justify-center text-white">
+              <i data-lucide="globe-2" class="w-5 h-5 text-forest-500"></i>
+            </div>
+            <span class="font-heading font-extrabold text-xl text-white">ABC <span class="text-forest-500 font-light">EXPORTS</span></span>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            International Trading &amp; Export Company connecting quality agricultural commodities and Indian goods to global markets.
+          </p>
+          <div class="text-xs text-slate-500 pt-2">
+            <span class="inline-block px-2.5 py-1 rounded bg-navy-850 border border-slate-800 text-slate-300 font-mono">
+              India &rarr; Global Trade
+            </span>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="space-y-3">
+          <h4 class="font-heading font-bold text-white text-xs uppercase tracking-wider">Quick Navigation</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#home" class="hover:text-white transition">Home</a></li>
+            <li><a href="#about" class="hover:text-white transition">About ABC EXPORTS</a></li>
+            <li><a href="#products" class="hover:text-white transition">Product Catalog</a></li>
+            <li><a href="#process" class="hover:text-white transition">5-Step Export Process</a></li>
+            <li><a href="#why-us" class="hover:text-white transition">Why Choose Us</a></li>
+            <li><a href="#contact" class="hover:text-white transition">Contact &amp; RFQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Major Export Lines -->
+        <div class="space-y-3">
+          <h4 class="font-heading font-bold text-white text-xs uppercase tracking-wider">Export Commodities</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#products" class="hover:text-white transition">Basmati &amp; Non-Basmati Rice</a></li>
+            <li><a href="#products" class="hover:text-white transition">Fresh Cavendish Bananas &amp; Chips</a></li>
+            <li><a href="#products" class="hover:text-white transition">Dry &amp; Fresh Ginger</a></li>
+            <li><a href="#products" class="hover:text-white transition">Graded Indian Garlic &amp; Onions</a></li>
+            <li><a href="#products" class="hover:text-white transition">Indian Spices (Turmeric, Cumin, Chili)</a></li>
+            <li><a href="#products" class="hover:text-white transition">Custom Product Sourcing</a></li>
+          </ul>
+        </div>
+
+        <!-- Official Contact -->
+        <div class="space-y-3">
+          <h4 class="font-heading font-bold text-white text-xs uppercase tracking-wider">Direct Trade Desk</h4>
+          <div class="text-xs space-y-2.5 text-slate-300">
+            <p class="flex items-center gap-2">
+              <i data-lucide="phone" class="w-4 h-4 text-forest-500"></i>
+              <a href="tel:+918331851746" class="hover:text-white font-medium">+91 8331851746</a>
+            </p>
+            <p class="flex items-center gap-2">
+              <i data-lucide="message-square" class="w-4 h-4 text-forest-500"></i>
+              <a href="https://wa.me/918331851746" target="_blank" rel="noopener noreferrer" class="hover:text-white">WhatsApp Business</a>
+            </p>
+            <p class="flex items-center gap-2">
+              <i data-lucide="globe" class="w-4 h-4 text-forest-500"></i>
+              <span>Export Origin: India</span>
+            </p>
+          </div>
+          <div class="pt-3">
+            <p class="text-[11px] text-slate-400">
+              TRUSTED &bull; QUALITY &bull; GLOBAL &bull; PROFESSIONAL
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright Notice -->
+      <div class="mt-12 pt-6 border-t border-navy-850 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-3">
+        <p>&copy; <span id="currentYear"></span> ABC EXPORTS. All rights reserved. International Trading Company.</p>
+        <p class="text-slate-400">Export compliance &bull; Standardized handling &bull; Global logistics</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- RFQ / QUICK INQUIRY MODAL -->
+  <div id="rfqModal" class="fixed inset-0 z-50 hidden bg-navy-950/75 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border border-slate-200 relative animate-in fade-in zoom-in duration-200">
+      
+      <!-- Close Button -->
+      <button onclick="closeRFQModal()" class="absolute top-4 right-4 text-slate-400 hover:text-navy-900 p-1.5 rounded-lg hover:bg-slate-100 transition">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="mb-5">
+        <div class="inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wider text-forest-700 bg-forest-50 px-2.5 py-1 rounded-md mb-2">
+          <i data-lucide="clipboard-list" class="w-3.5 h-3.5"></i>
+          Request For Quotation
+        </div>
+        <h3 class="font-heading font-extrabold text-2xl text-navy-900" id="modalTitle">Inquire: Product</h3>
+        <p class="text-xs text-slate-500 mt-1">Please provide your target quantity and delivery port for a formal quote.</p>
+      </div>
+
+      <form id="modalForm" onsubmit="handleModalSubmit(event)" class="space-y-3.5">
+        <input type="hidden" id="modalProductTarget" value="" />
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1" for="modalName">Buyer / Representative Name *</label>
+          <input 
+            type="text" 
+            id="modalName" 
+            required 
+            placeholder="Your name or company" 
+            class="w-full text-xs sm:text-sm px-3.5 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-forest-600 outline-none bg-slate-50 focus:bg-white"
+          />
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1" for="modalEmail">Email Address *</label>
+            <input 
+              type="email" 
+              id="modalEmail" 
+              required 
+              placeholder="buyer@domain.com" 
+              class="w-full text-xs sm:text-sm px-3.5 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-forest-600 outline-none bg-slate-50 focus:bg-white"
+            />
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1" for="modalPhone">WhatsApp / Mobile *</label>
+            <input 
+              type="tel" 
+              id="modalPhone" 
+              required 
+              placeholder="+Country & Number" 
+              class="w-full text-xs sm:text-sm px-3.5 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-forest-600 outline-none bg-slate-50 focus:bg-white"
+            />
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1" for="modalQuantity">Quantity Required</label>
+            <input 
+              type="text" 
+              id="modalQuantity" 
+              placeholder="e.g. 20 MT / 1 Container" 
+              class="w-full text-xs sm:text-sm px-3.5 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-forest-600 outline-none bg-slate-50 focus:bg-white"
+            />
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1" for="modalPort">Destination Port</label>
+            <input 
+              type="text" 
+              id="modalPort" 
+              placeholder="e.g. Jebel Ali / Singapore" 
+              class="w-full text-xs sm:text-sm px-3.5 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-forest-600 outline-none bg-slate-50 focus:bg-white"
+            />
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1" for="modalNotes">Specific Packing / Instructions</label>
+          <textarea 
+            id="modalNotes" 
+            rows="2" 
+            placeholder="Grades, packaging size, or special requirements..." 
+            class="w-full text-xs sm:text-sm px-3.5 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-forest-600 outline-none bg-slate-50 focus:bg-white"
+          ></textarea>
+        </div>
+
+        <div id="modalFeedback" class="hidden p-2.5 rounded-lg text-xs font-medium"></div>
+
+        <div class="flex items-center gap-3 pt-2">
+          <button 
+            type="submit" 
+            id="modalSubmitBtn"
+            class="flex-1 bg-forest-600 hover:bg-forest-700 text-white font-semibold text-sm py-2.5 rounded-lg shadow transition"
+          >
+            Submit RFQ
+          </button>
+          <button 
+            type="button" 
+            onclick="closeRFQModal()" 
+            class="px-4 py-2.5 border border-slate-300 hover:bg-slate-100 text-slate-700 text-sm font-semibold rounded-lg transition"
+          >
+            Cancel
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- FLOATING QUICK CONNECT BUTTON (WhatsApp) -->
+  <div class="fixed bottom-6 right-6 z-40 flex flex-col items-end gap-2">
+    <a 
+      href="https://wa.me/918331851746?text=Hello%20ABC%20EXPORTS,%20I%20would%20like%20to%20discuss%20an%20export%20inquiry." 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      aria-label="Direct WhatsApp Trade Inquiry"
+      class="bg-emerald-600 hover:bg-emerald-700 text-white p-3.5 rounded-full shadow-2xl hover:scale-105 transition-all flex items-center gap-2 group"
+    >
+      <i data-lucide="message-circle" class="w-6 h-6"></i>
+      <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 text-xs font-bold pr-1">
+        WhatsApp Trade Desk
+      </span>
+    </a>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Set Copyright Year
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    // Mobile Hamburger Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuOpenIcon = document.getElementById('menuOpenIcon');
+    const menuCloseIcon = document.getElementById('menuCloseIcon');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      const isHidden = mobileMenu.classList.contains('hidden');
+      if (isHidden) {
+        mobileMenu.classList.remove('hidden');
+        menuOpenIcon.classList.add('hidden');
+        menuCloseIcon.classList.remove('hidden');
+      } else {
+        closeMobileMenu();
+      }
+    });
+
+    function closeMobileMenu() {
+      mobileMenu.classList.add('hidden');
+      menuOpenIcon.classList.remove('hidden');
+      menuCloseIcon.classList.add('hidden');
+    }
+
+    // Category Filtering Logic
+    function filterProducts(category) {
+      const buttons = document.querySelectorAll('.category-btn');
+      buttons.forEach(btn => {
+        if (btn.getAttribute('data-cat') === category) {
+          btn.classList.add('bg-navy-900', 'text-white');
+          btn.classList.remove('bg-white', 'text-slate-700', 'border');
+        } else {
+          btn.classList.remove('bg-navy-900', 'text-white');
+          btn.classList.add('bg-white', 'text-slate-700', 'border');
+        }
+      });
+
+      const items = document.querySelectorAll('.product-item');
+      items.forEach(item => {
+        const itemCat = item.getAttribute('data-category');
+        if (category === 'all' || itemCat === category) {
+          item.classList.remove('hidden');
+        } else {
+          item.classList.add('hidden');
+        }
+      });
+    }
+
+    // RFQ Modal Handling
+    const rfqModal = document.getElementById('rfqModal');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalProductTarget = document.getElementById('modalProductTarget');
+    const modalFeedback = document.getElementById('modalFeedback');
+
+    function openRFQModal(productName) {
+      modalTitle.textContent = productName ? 'Inquire: ' + productName : 'Request an Export Quote';
+      modalProductTarget.value = productName || 'General Export Inquiry';
+      modalFeedback.classList.add('hidden');
+      document.getElementById('modalForm').reset();
+      rfqModal.classList.remove('hidden');
+      document.body.classList.add('overflow-hidden');
+    }
+
+    function closeRFQModal() {
+      rfqModal.classList.add('hidden');
+      document.body.classList.remove('overflow-hidden');
+    }
+
+    // Close modal on Escape key or outside click
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !rfqModal.classList.contains('hidden')) {
+        closeRFQModal();
+      }
+    });
+    rfqModal.addEventListener('click', (e) => {
+      if (e.target === rfqModal) {
+        closeRFQModal();
+      }
+    });
+
+    // Handle Contact Form Submission
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const feedback = document.getElementById('formFeedback');
+      const submitBtn = document.getElementById('submitBtn');
+      const name = document.getElementById('senderName').value;
+      const product = document.getElementById('productInterest').value;
+      const phone = document.getElementById('senderPhone').value;
+
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = `<span>Processing...</span>`;
+
+      setTimeout(() => {
+        feedback.className = "p-3 rounded-lg text-xs font-medium bg-emerald-50 text-emerald-800 border border-emerald-200";
+        feedback.innerHTML = `<strong>Thank you, ${name}!</strong> Your export inquiry for <strong>${product}</strong> has been logged. Our international sales desk (+91 8331851746) will review specifications and reply within 24 hours.`;
+        feedback.classList.remove('hidden');
+        document.getElementById('contactForm').reset();
+
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = `<span>SUBMIT INQUIRY</span> <i data-lucide="send" class="w-4 h-4"></i>`;
+        lucide.createIcons();
+      }, 700);
+    }
+
+    // Handle Modal RFQ Submission
+    function handleModalSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('modalName').value;
+      const product = modalProductTarget.value;
+      const modalSubmitBtn = document.getElementById('modalSubmitBtn');
+
+      modalSubmitBtn.disabled = true;
+      modalSubmitBtn.textContent = 'Submitting...';
+
+      setTimeout(() => {
+        modalFeedback.className = "p-3 rounded-lg text-xs font-medium bg-emerald-50 text-emerald-800 border border-emerald-200";
+        modalFeedback.innerHTML = `Inquiry received for <strong>${product}</strong>. We will get back to ${name} with shipping and packing specifications promptly.`;
+        modalFeedback.classList.remove('hidden');
+        modalSubmitBtn.disabled = false;
+        modalSubmitBtn.textContent = 'Submit RFQ';
+
+        setTimeout(() => {
+          closeRFQModal();
+        }, 2200);
+      }, 600);
+    }
+  </script>
+</body>
+</html>
