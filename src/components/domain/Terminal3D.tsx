@@ -17,11 +17,11 @@ function FlightPaths({ playing }: { playing: boolean }) {
   return <group>
     <group ref={orbit} position={[0,1.4,0]}>
       {[0,1,2].map(i => <group key={i} rotation={[0, i * Math.PI * 2 / 3, 0]}>
-        <mesh rotation={[Math.PI / 2,0,0]}><torusGeometry args={[6.1,0.012,6,100,Math.PI * 0.8]}/><meshStandardMaterial color="#66baff" emissive="#399fff" emissiveIntensity={2} transparent opacity={0.45}/></mesh>
-        <mesh position={[6.1,0,0]}><sphereGeometry args={[0.065,12,12]}/><meshStandardMaterial color="#d8efff" emissive="#65baff" emissiveIntensity={4}/></mesh>
+        <mesh rotation={[Math.PI / 2,0,0]}><torusGeometry args={[6.1,0.012,6,100,Math.PI * 0.8]}/><meshStandardMaterial color="#cba65a" emissive="#b68d3c" emissiveIntensity={2} transparent opacity={0.45}/></mesh>
+        <mesh position={[6.1,0,0]}><sphereGeometry args={[0.065,12,12]}/><meshStandardMaterial color="#d8efff" emissive="#d7b66c" emissiveIntensity={4}/></mesh>
       </group>)}
     </group>
-    <mesh ref={scanner} position={[0,0.2,0]} rotation={[-Math.PI/2,0,0]}><planeGeometry args={[9.7,0.06]}/><meshStandardMaterial color="#86d0ff" emissive="#469fff" emissiveIntensity={3} transparent opacity={0.6}/></mesh>
+    <mesh ref={scanner} position={[0,0.2,0]} rotation={[-Math.PI/2,0,0]}><planeGeometry args={[9.7,0.06]}/><meshStandardMaterial color="#e1c586" emissive="#c29a48" emissiveIntensity={3} transparent opacity={0.6}/></mesh>
     {[-4.8,4.8].map(x => <group key={x}>
       <Block position={[x,1.7,-3]} size={[0.1,3.4,0.1]} color="#587c9e"/>
       <Block position={[x,3.4,-2.3]} size={[0.1,0.1,1.5]} color="#8ecaff"/>
@@ -59,8 +59,8 @@ function AerialLogistics({ playing }: { playing: boolean }) {
       <mesh position={[0,0.15,0]}><sphereGeometry args={[0.055,12,12]}/><meshStandardMaterial color="#3891ff" emissive="#1875ff" emissiveIntensity={2}/></mesh>
     </group>
     <group position={[4,0,-2.6]}>
-      {[0,1.4].map(z=><Block key={z} position={[0,1.9,z]} size={[0.14,3.8,0.14]} color="#2d8989" metalness={0.6}/>)}
-      <Block position={[-0.7,3.85,0.7]} size={[1.6,0.16,1.7]} color="#257b7d" metalness={0.6}/>
+      {[0,1.4].map(z=><Block key={z} position={[0,1.9,z]} size={[0.14,3.8,0.14]} color="#192e60" metalness={0.6}/>)}
+      <Block position={[-0.7,3.85,0.7]} size={[1.6,0.16,1.7]} color="#243d75" metalness={0.6}/>
       <group ref={hoist} position={[-0.75,1.8,0.7]}>
         <Block position={[0,0,0]} size={[0.6,0.6,0.6]} color="#8eb6e6"/>
         <Block position={[0,0.36,0]} size={[0.8,0.07,0.7]} color="#426389"/>
@@ -104,16 +104,16 @@ function Terminal({ playing, view, exploded }: Omit<TerminalProps, 'onFailure'>)
   });
   return <group ref={root} position={[0, -0.8, 0]}>
     <FlightPaths playing={playing} /><AerialLogistics playing={playing} />
-    <Block position={[0,-0.12,0]} size={[10.4,0.26,8]} color="#80b7b1" />
-    <Block position={[0,0.025,2.8]} size={[9.8,0.035,1.35]} color="#548f89" />
+    <Block position={[0,-0.12,0]} size={[10.4,0.26,8]} color="#a3adc1" />
+    <Block position={[0,0.025,2.8]} size={[9.8,0.035,1.35]} color="#596780" />
     {Array.from({length:14},(_,i)=><Block key={i} position={[-4.5+i*0.68,0.05,2.8]} size={[0.3,0.02,0.055]} color="#b2d8f5" />)}
     <group position={[-2,0,-1.3]}>
-      <Block position={[0,1.05,0]} size={[3.8,2.1,3.1]} color="#94bcb3" />
+      <Block position={[0,1.05,0]} size={[3.8,2.1,3.1]} color="#d7d2c4" />
       <Block position={[0,2.2,0]} size={[4.1,0.22,3.4]} color="#d2e5f3" />
-      <Block position={[0,2.35,-0.12]} size={[3.5,0.12,2.8]} color="#20545b" />
+      <Block position={[0,2.35,-0.12]} size={[3.5,0.12,2.8]} color="#203662" />
       {[-1.25,0,1.25].map(x=><group key={x}>
         <Block position={[x,0.85,1.57]} size={[0.88,1.5,0.08]} color="#0e223b" />
-        {[0,1,2,3,4,5].map(i=><Block key={i} position={[x,0.24+i*0.22,1.62]} size={[0.8,0.035,0.025]} color="#468b86" />)}
+        {[0,1,2,3,4,5].map(i=><Block key={i} position={[x,0.24+i*0.22,1.62]} size={[0.8,0.035,0.025]} color="#677694" />)}
         <Block position={[x,1.74,1.64]} size={[0.9,0.05,0.04]} color="#9ddcff" />
         <Block position={[x,0.08,1.98]} size={[1,0.16,0.7]} color="#507294" />
       </group>)}
@@ -124,9 +124,9 @@ function Terminal({ playing, view, exploded }: Omit<TerminalProps, 'onFailure'>)
     <group ref={truck}>
       <group position={[2.6,0,0]}>
         <Block position={[0,0.58,0.15]} size={[1.7,0.22,4.6]} color="#142033" />
-        <mesh ref={cargo} position={[0,1.33,-0.5]} castShadow><boxGeometry args={[1.68,1.35,3.05]} /><meshStandardMaterial color="#2c9390" roughness={0.38} metalness={0.15} /></mesh>
+        <mesh ref={cargo} position={[0,1.33,-0.5]} castShadow><boxGeometry args={[1.68,1.35,3.05]} /><meshStandardMaterial color="#b48b3e" roughness={0.38} metalness={0.15} /></mesh>
         {exploded && [-0.42,0.42].map(x=><group key={x}>{[-1.45,-0.65,0.15].map(z=><Block key={z} position={[x,1.05,z]} size={[0.65,0.65,0.65]} color="#b2cae5" />)}</group>)}
-        {[-0.86,0.86].map(x=><group key={x}>{Array.from({length:13},(_,i)=><Block key={i} position={[x,1.35,-1.88+i*0.23]} size={[0.025,1.12,0.05]} color="#207773" />)}</group>)}
+        {[-0.86,0.86].map(x=><group key={x}>{Array.from({length:13},(_,i)=><Block key={i} position={[x,1.35,-1.88+i*0.23]} size={[0.025,1.12,0.05]} color="#95722d" />)}</group>)}
         <Block position={[0,0.76,1.88]} size={[1.6,0.55,1.15]} color="#e2edf7" />
         <Block position={[0,1.28,1.8]} size={[1.52,0.76,0.92]} color="#e2edf7" />
         <Block position={[0,1.4,2.27]} size={[1.22,0.42,0.035]} color="#173f60" />
@@ -136,7 +136,7 @@ function Terminal({ playing, view, exploded }: Omit<TerminalProps, 'onFailure'>)
       </group>
     </group>
     {[[-3.8,0.4,1.6],[-3.05,0.4,1.8],[-3.8,1.05,1.6],[-2.8,0.4,2.55]].map((p,i)=><Block key={i} position={p as [number,number,number]} size={[0.62,0.65,0.62]} color={i%2 ? '#8faecf':'#bed1e8'} />)}
-    {[-4.5,4.5].map(x=><group key={x}><mesh position={[x,0.08,2.8]} rotation={[-Math.PI/2,0,0]}><torusGeometry args={[0.26,0.025,8,32]} /><meshStandardMaterial color="#2c9390" emissive="#48aaff" emissiveIntensity={0.45} /></mesh></group>)}
+    {[-4.5,4.5].map(x=><group key={x}><mesh position={[x,0.08,2.8]} rotation={[-Math.PI/2,0,0]}><torusGeometry args={[0.26,0.025,8,32]} /><meshStandardMaterial color="#b48b3e" emissive="#d4ad5a" emissiveIntensity={0.45} /></mesh></group>)}
   </group>;
 }
 function ContextHealth({ onFailure }: { onFailure: () => void }) {
@@ -154,7 +154,7 @@ export default function Terminal3D(props: TerminalProps) {
   return <Canvas camera={{position:[12,10,15],fov:38}} dpr={[1,1.5]} shadows={{type:PCFShadowMap}} frameloop={props.playing?'always':'demand'} gl={{antialias:true,alpha:true,powerPreference:'low-power'}} fallback={null}>
     <ambientLight intensity={dark ? 0.65 : 1.4} /><hemisphereLight args={[dark ? '#9bcaff' : '#f3f7ff','#142d4d',dark ? 0.8 : 1.4]} />
     <directionalLight position={[4,9,5]} intensity={dark ? 2.1 : 3} castShadow shadow-mapSize={[1024,1024]} shadow-camera-left={-9} shadow-camera-right={9} shadow-camera-top={9} shadow-camera-bottom={-9} shadow-normalBias={0.04} />
-    <directionalLight position={[-6,4,-4]} color="#6dbbff" intensity={dark ? 2.4 : 1.4} />
+    <directionalLight position={[-6,4,-4]} color="#e2c68b" intensity={dark ? 2.4 : 1.4} />
     <ResponsiveCamera /><Terminal {...props} /><ContextHealth onFailure={props.onFailure} />
   </Canvas>;
 }

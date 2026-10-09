@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import { ArrowUpRight as BrandArrow, ArrowUpRight, Menu, X, Sun, Moon } from 'lucide-react';
+import { ArrowUpRight, Menu, X, Sun, Moon } from 'lucide-react';
+import logo from '../../assets/logo-restored.png';
 import { Button } from '../ui/Button';
 
 
@@ -38,18 +39,7 @@ export const Header: React.FC<HeaderProps> = ({
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="brand-link flex items-center gap-2 sm:gap-3 group min-w-0">
-            <div className="w-11 h-11 rounded-xl bg-navy-900 dark:bg-navy-850 flex items-center justify-center text-white shadow-md shadow-navy-900/10 group-hover:scale-105 transition-transform duration-200 border border-navy-800">
-              <BrandArrow className="w-6 h-6 text-emerald-400 group-hover:rotate-12 transition-transform duration-300" />
-            </div>
-            <div>
-              <div className="flex items-center gap-1.5 leading-none">
-                <span className="font-heading font-black text-2xl tracking-tight text-navy-900 dark:text-white">ABC</span>
-                <span className="font-heading font-bold text-2xl tracking-tight text-forest-600 dark:text-emerald-400">EXPORTS</span>
-              </div>
-              <p className="text-[10px] tracking-widest uppercase font-semibold text-slate-500 dark:text-slate-400 mt-1">
-                SOURCED IN INDIA. SHARED WITH THE WORLD.
-              </p>
-            </div>
+            <img src={logo} alt="Hind Legacy Logistics" className="brand-logo" width="2164" height="727" />
           </Link>
 
           {/* Desktop Navigation */}

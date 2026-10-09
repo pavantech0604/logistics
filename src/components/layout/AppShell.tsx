@@ -21,7 +21,7 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "instant" });
     const titles: Record<string, string> = { '/': 'Global agricultural trade', '/products': 'Export commodities', '/calculator': 'Freight estimator', '/process': 'Export process', '/about': 'About our sourcing network', '/contact': 'Contact and RFQ' };
-    document.title = `${titles[location.pathname] || 'Page not found'} | ABC EXPORTS`;
+    document.title = `${titles[location.pathname] || 'Page not found'} | Hind Legacy Logistics`;
   }, [location.pathname]);
   const [rfqModalOpen, setRfqModalOpen] = useState(false);
   const [targetProduct, setTargetProduct] = useState<string | undefined>(undefined);
@@ -119,7 +119,7 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
 
         {/* WhatsApp Business Desk */}
         <a
-          href="https://wa.me/918331851746?text=Hello%20ABC%20EXPORTS,%20I%20would%20like%20to%20discuss%20an%20export%20inquiry."
+          href="https://wa.me/918331851746?text=Hello%20Hind%20Legacy%20Logistics,%20I%20would%20like%20to%20discuss%20an%20export%20inquiry."
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Direct WhatsApp Trade Inquiry"

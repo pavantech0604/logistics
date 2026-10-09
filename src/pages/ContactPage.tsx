@@ -74,7 +74,7 @@ export const ContactPage: React.FC = () => {
               <div>
                 <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide">WhatsApp Business Desk</p>
                 <a
-                  href="https://wa.me/918331851746?text=Hello%20ABC%20EXPORTS,%20I%20am%20interested%20in%20discussing%20an%20export%20inquiry."
+                  href="https://wa.me/918331851746?text=Hello%20Hind%20Legacy%20Logistics,%20I%20am%20interested%20in%20discussing%20an%20export%20inquiry."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-base font-bold text-navy-900 dark:text-white hover:text-emerald-500 transition"
@@ -90,8 +90,8 @@ export const ContactPage: React.FC = () => {
                 <Mail className="w-5 h-5" />
               </div>
               <div>
-                <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide">Formal Inquiries Email</p>
-                <p className="text-base font-bold text-navy-900 dark:text-white">exports@abcexports.com</p>
+                <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide">Formal Trade Inquiries</p>
+                <p className="text-base font-bold text-navy-900 dark:text-white">Send a quotation request</p>
                 <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">Purchase orders &amp; spec submissions</p>
               </div>
             </div>
@@ -102,7 +102,7 @@ export const ContactPage: React.FC = () => {
               </div>
               <div>
                 <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide">Headquarters &amp; Origin Country</p>
-                <p className="text-sm font-bold text-navy-900 dark:text-white">ABC EXPORTS &bull; India</p>
+                <p className="text-sm font-bold text-navy-900 dark:text-white">Hind Legacy Logistics &bull; India</p>
                 <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">
                   Export clearances via JNPT (Nhava Sheva), Mundra, Chennai &amp; Visakhapatnam Port
                 </p>

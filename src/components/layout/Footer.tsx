@@ -1,6 +1,7 @@
+import logo from '../../assets/logo-restored.png';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Globe, Phone, MessageSquare, MapPin, Mail, Shield, CheckCircle } from 'lucide-react';
+import { Phone, MessageSquare, MapPin, Mail, Shield, CheckCircle } from 'lucide-react';
 
 const currentYear = new Date().getFullYear();
 export const Footer: React.FC = () => {
@@ -11,14 +12,7 @@ export const Footer: React.FC = () => {
           
           {/* Company Bio */}
           <div className="space-y-4">
-            <div className="flex items-center gap-2.5">
-              <div className="w-9 h-9 rounded-xl bg-navy-850 flex items-center justify-center text-white border border-navy-700">
-                <Globe className="w-5 h-5 text-emerald-400" />
-              </div>
-              <span className="font-heading font-extrabold text-xl text-white">
-                ABC <span className="text-emerald-400 font-light">EXPORTS</span>
-              </span>
-            </div>
+            <Link to="/" className="footer-brand"><img src={logo} alt="Hind Legacy Logistics" width="2164" height="727" /></Link>
             <p className="text-xs text-slate-400 leading-relaxed">
               International Trading &amp; Export Company connecting certified Indian agricultural commodities, fresh produce, and spices to global importers, retail chains, and wholesale distributors.
             </p>
@@ -77,7 +71,7 @@ export const Footer: React.FC = () => {
               <p className="flex items-center gap-2.5">
                 <MessageSquare className="w-4 h-4 text-emerald-400 shrink-0" />
                 <a
-                  href="https://wa.me/918331851746?text=Hello%20ABC%20EXPORTS,%20I%20am%20interested%20in%20discussing%20an%20export%20inquiry."
+                  href="https://wa.me/918331851746?text=Hello%20Hind%20Legacy%20Logistics,%20I%20am%20interested%20in%20discussing%20an%20export%20inquiry."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-white"
@@ -87,7 +81,7 @@ export const Footer: React.FC = () => {
               </p>
               <p className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-emerald-400 shrink-0" />
-                <span className="hover:text-white">exports@abcexports.com</span>
+                <span className="hover:text-white">Contact our trade desk</span>
               </p>
               <p className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
@@ -101,7 +95,7 @@ export const Footer: React.FC = () => {
         {/* Bottom Strip */}
         <div className="mt-12 pt-8 border-t border-navy-850 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
           <p>
-            &copy; {currentYear} ABC EXPORTS. All rights reserved. International Trading Company.
+            &copy; {currentYear} Hind Legacy Logistics. All rights reserved. International Trading Company.
           </p>
           <p className="flex items-center gap-3">
             <span>Export Compliance</span>

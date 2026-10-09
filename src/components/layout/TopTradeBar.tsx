@@ -30,7 +30,7 @@ export const TopTradeBar: React.FC = () => {
             <span>+91 8331851746</span>
           </a>
           <a
-            href="https://wa.me/918331851746?text=Hello%20ABC%20EXPORTS,%20I%20am%20interested%20in%20discussing%20an%20agricultural%20export%20inquiry."
+            href="https://wa.me/918331851746?text=Hello%20Hind%20Legacy%20Logistics,%20I%20am%20interested%20in%20discussing%20an%20agricultural%20export%20inquiry."
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-emerald-300 flex items-center gap-1.5 transition-colors text-slate-300 font-medium"

@@ -46,7 +46,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             </h2>
 
             <p className="text-slate-600 dark:text-slate-300 text-base sm:text-lg leading-relaxed">
-              ABC EXPORTS is an India-based export and international trading house focused on connecting verified agricultural commodities and fresh farm produce with international buyers. We build long-term business partnerships through consistent quality, transparent communication, and professional export logistics.
+              Hind Legacy Logistics is an India-based export and international trading house focused on connecting verified agricultural commodities and fresh farm produce with international buyers. We build long-term business partnerships through consistent quality, transparent communication, and professional export logistics.
             </p>
 
             <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
@@ -165,7 +165,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 Discuss Custom Requirements
               </Button>
               <a
-                href="https://wa.me/918331851746?text=Hello%20ABC%20EXPORTS,%20I%20have%20a%20custom%20export%20sourcing%20requirement."
+                href="https://wa.me/918331851746?text=Hello%20Hind%20Legacy%20Logistics,%20I%20have%20a%20custom%20export%20sourcing%20requirement."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-navy-950/80 hover:bg-navy-950 border border-slate-700 text-slate-200 text-sm font-semibold px-5 py-3 rounded-lg transition-colors flex items-center gap-2"
@@ -235,7 +235,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             </h2>
 
             <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-sm">
-              In international agricultural trade, reliability is non-negotiable. Overseas importers partner with ABC EXPORTS for our transparent commercial conduct, strict lab verification, and timely ocean dispatch from premier Indian ports.
+              In international agricultural trade, reliability is non-negotiable. Overseas importers partner with Hind Legacy Logistics for our transparent commercial conduct, strict lab verification, and timely ocean dispatch from premier Indian ports.
             </p>
 
             <div className="bg-white dark:bg-navy-900 p-5 rounded-2xl border border-slate-200 dark:border-navy-800 shadow-sm flex items-center gap-4">
@@ -377,7 +377,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 <div>
                   <p className="text-xs font-semibold text-slate-500 uppercase">Instant WhatsApp Chat</p>
                   <a
-                    href="https://wa.me/918331851746?text=Hello%20ABC%20EXPORTS,%20I%20am%20interested%20in%20discussing%20an%20export%20inquiry."
+                    href="https://wa.me/918331851746?text=Hello%20Hind%20Legacy%20Logistics,%20I%20am%20interested%20in%20discussing%20an%20export%20inquiry."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-base font-bold text-navy-900 dark:text-white hover:text-emerald-500 transition"

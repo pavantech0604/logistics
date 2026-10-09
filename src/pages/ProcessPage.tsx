@@ -35,7 +35,7 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ openRFQ }) => {
             Mandatory Export Documentation Suite
           </h2>
           <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1">
-            Every shipment dispatched by ABC EXPORTS comes with complete statutory documents prepared by certified customs house agents.
+            Every shipment dispatched by Hind Legacy Logistics comes with complete statutory documents prepared by certified customs house agents.
           </p>
         </div>
 

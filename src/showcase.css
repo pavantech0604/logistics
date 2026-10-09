@@ -1,4 +1,4 @@
-/* ABC EXPORTS / editorial trade system */
+/* Hind Legacy Logistics / editorial trade system */
 :root { --bg-main:#f0f3f8; --surface:#ffffff; --surface-elevated:#ffffff; --surface-muted:#e7edf5; --text-primary:#111e36; --text-secondary:#566780; --text-muted:#708099; --border-subtle:#d8e1ee; --border-strong:#b8c8dd; --forest-accent:#3675c5; --gold-accent:#bc784b; }
 .dark { --bg-main:#080f1f; --surface:#101d33; --surface-elevated:#172740; --surface-muted:#0b1629; --text-primary:#f0f5ff; --text-secondary:#a8bbd4; --text-muted:#879cb8; --border-subtle:#253854; --border-strong:#3e5778; --forest-accent:#8ecaff; }
 html, body { font-family:'Inter',sans-serif; }

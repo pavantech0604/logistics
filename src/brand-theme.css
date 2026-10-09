@@ -1,0 +1,96 @@
+/* Logo-led identity: maritime navy, warm ivory, and brushed gold. */
+html:not(.dark) { --bg-main:#f2efe8; --surface:#fcfaf5; --surface-elevated:#fffdf8; --surface-muted:#e9e6de; --text-primary:#172953; --text-secondary:#505b70; --text-muted:#687184; --border-subtle:#ddd9cf; --border-strong:#bdc3d0; --forest-accent:#243c73; --gold-accent:#a17a2c; }
+html.dark { --bg-main:#080f20; --surface:#121e36; --surface-elevated:#1b2c49; --surface-muted:#0d172b; --forest-accent:#e1c17c; --gold-accent:#e1c17c; }
+.brand-link { gap:12px; flex-shrink:0; }
+.footer-brand { display:inline-flex; padding:14px 18px; border-radius:12px; background:#f7f3e9; box-shadow:0 8px 30px #07132b12; }
+html:not(.dark) .showcase-shell { background:radial-gradient(ellipse at 95% 8%,#ccd5e355,transparent 45%),radial-gradient(ellipse at 0% 55%,#ddc58b26,transparent 50%),var(--bg-main); }
+html:not(.dark) .showcase-shell header { background:#f5f2ebed; }
+html:not(.dark) .home-page .export-hero,html:not(.dark) .export-hero { background:radial-gradient(ellipse at 90% 15%,#b4c3dd70,transparent 60%),radial-gradient(ellipse at 5% 100%,#d8bb7538,transparent 60%),linear-gradient(120deg,#f7f2e8,#e6e9ed); color:#172953; box-shadow:0 24px 70px -35px #14274c45; }
+html:not(.dark) .hero-copy h1 > span { background:linear-gradient(110deg,#243b70,#50699a); background-clip:text; -webkit-text-fill-color:transparent; }
+html:not(.dark) .hero-quote,html:not(.dark) .premium-action,.dark .hero-quote,.dark .premium-action { background:linear-gradient(120deg,#e3c786,#cba45a); color:#152547; border-color:transparent; box-shadow:0 8px 25px #aa803424; }
+html:not(.dark) .hero-quote:hover,html:not(.dark) .premium-action:hover,.dark .hero-quote:hover,.dark .premium-action:hover { background:linear-gradient(120deg,#ecd49e,#dab96e); color:#152547; box-shadow:0 12px 30px #aa80343b; }
+.dark .hero-copy h1 > span { background:linear-gradient(110deg,#f2ddb0,#cda659); background-clip:text; -webkit-text-fill-color:transparent; }
+.dark header nav[aria-label="Main navigation"] a[aria-current="page"] { background:#293c60; color:#f0d79f; }
+.dark .terminal-buttons button[aria-pressed="true"],.dark .terminal-buttons button:hover:not(:disabled) { background:#d1ad65; color:#142547; border-color:#d1ad65; }
+.dark .trade-route-line { stroke:#d4b16b; }
+.dark .trade-vessel { fill:#dfc184; }
+.dark .trade-hub { fill:#e0bd76; }
+.dark .showcase-shell a[aria-label="Direct WhatsApp Trade Inquiry"] { background:#243b70; border-color:#9b814b; }
+html:not(.dark) .trade-route-line { stroke:#b38b40; }
+html:not(.dark) .trade-vessel { fill:#243b70; }
+html:not(.dark) .trade-hub { fill:#aa8232; }
+html:not(.dark) .trade-aura { background:radial-gradient(ellipse,#a8b8d545,transparent 65%); }
+.dark .showcase-shell .eyebrow,.dark .showcase-shell .text-emerald-400,.dark .showcase-shell .text-forest-600 { color:#dfbc72; }
+html:not(.dark) .showcase-shell footer { background:linear-gradient(125deg,#172953,#0e1c39); color:#c3cede; }
+html:not(.dark) .showcase-shell footer .text-white { color:#f7f3e9; }
+html:not(.dark) .showcase-shell footer .text-slate-300,html:not(.dark) .showcase-shell footer .text-slate-400,html:not(.dark) .showcase-shell footer .text-slate-500 { color:#c3cede; }
+html:not(.dark) .showcase-shell footer .bg-navy-900 { background:#263a5e; }
+html:not(.dark) .showcase-shell footer .text-emerald-400 { color:#dfbc72; }
+
+/* Stronger maritime presentation: luminous blue, ink navy, and vivid gold. */
+html:not(.dark) { --bg-main:#e6edf9; --surface:#f7faff; --surface-elevated:#ffffff; --surface-muted:#d9e4f5; --text-primary:#10234c; --text-secondary:#405675; --border-subtle:#c8d6ec; --forest-accent:#244d9a; --gold-accent:#a36d14; }
+html:not(.dark) .showcase-shell { background:radial-gradient(ellipse at 100% 10%,#9fbcef55,transparent 50%),radial-gradient(ellipse at 0% 50%,#bfd2f180,transparent 45%),#e6edf9; }
+html:not(.dark) .showcase-shell header { background:#f0f5ffed; }
+.brand-link { position:relative; padding:10px 15px; border-radius:14px; background:#fffdf7; box-shadow:0 6px 24px #0e234c14; overflow:hidden; transition:transform .25s,box-shadow .25s; }
+.brand-logo,.dark .brand-logo { display:block; width:210px; height:auto; max-width:100%; padding:0; background:transparent; border-radius:0; object-fit:contain; }
+.brand-link:hover { transform:translateY(-2px); box-shadow:0 10px 28px #0e234c25; }
+.brand-link::after { content:''; position:absolute; inset:-100% -60%; background:linear-gradient(110deg,transparent 43%,#e2b95630 50%,transparent 57%); transform:translateX(-65%); transition:transform .7s; pointer-events:none; }
+.brand-link:hover::after { transform:translateX(65%); }
+html:not(.dark) header nav[aria-label="Main navigation"] { background:#dfe8f7; }
+html:not(.dark) header nav[aria-label="Main navigation"] a { color:#3c5278; }
+html:not(.dark) header nav[aria-label="Main navigation"] a[aria-current="page"],html:not(.dark) header nav[aria-label="Main navigation"] a[aria-current="page"]:hover { background:#183d86; color:#fff; box-shadow:0 5px 16px #173b8530; }
+html:not(.dark) .home-page .export-hero,html:not(.dark) .export-hero,.dark .home-page .export-hero,.dark .export-hero { background:radial-gradient(ellipse at 90% 10%,#3263b580,transparent 60%),radial-gradient(ellipse at 5% 100%,#82632725,transparent 60%),linear-gradient(120deg,#081b3c,#17396e); color:#f5f8ff; box-shadow:0 24px 70px -30px #071b4b65; }
+html:not(.dark) .hero-copy h1 > span,.dark .hero-copy h1 > span { background:linear-gradient(100deg,#ffe0a0,#edb94f); background-clip:text; -webkit-text-fill-color:transparent; }
+html:not(.dark) .hero-overline,html:not(.dark) .hero-overline span:last-child,html:not(.dark) .hero-index,html:not(.dark) .hero-description,html:not(.dark) .hero-bottom-note > span,html:not(.dark) .trade-facts span { color:#c4d4ef; }
+html:not(.dark) .hero-actions > a,html:not(.dark) .hero-bottom-note > a,html:not(.dark) .trade-facts > a svg { color:#e3edff; }
+html:not(.dark) .hero-index > span { background:#f1c266; box-shadow:0 0 0 5px #eabd5e18; }
+html:not(.dark) .hero-quote,html:not(.dark) .premium-action,.dark .hero-quote,.dark .premium-action { background:linear-gradient(120deg,#ffdc89,#e9b647); color:#10234c; box-shadow:0 8px 28px #eab64c30; }
+html:not(.dark) .hero-quote:hover,html:not(.dark) .premium-action:hover,.dark .hero-quote:hover,.dark .premium-action:hover { background:linear-gradient(120deg,#ffe6aa,#f5c761); color:#10234c; box-shadow:0 12px 35px #eab64c45; }
+html:not(.dark) .home-page .terminal-experience,html:not(.dark) .terminal-experience { background:radial-gradient(ellipse at 50% 40%,#345fa975,transparent 80%),linear-gradient(145deg,#19396a,#0a2046); box-shadow:0 25px 65px -20px #0006,inset 0 1px #ffffff12; }
+html:not(.dark) .terminal-topline { background:transparent; color:#cbdcfa; }
+html:not(.dark) .terminal-label { background:#244678; color:#f0ca7d; }
+html:not(.dark) .terminal-tag { background:#0d2445e8; color:#dce8fa; box-shadow:0 8px 25px #0003; }
+html:not(.dark) .tag-origin,html:not(.dark) .tag-cargo strong { color:#e6efff; }
+html:not(.dark) .tag-origin > span { background:#f3c773; }
+html:not(.dark) .tag-cargo small { color:#b1c7e8; }
+html:not(.dark) .terminal-controls { background:#081c39b0; }
+html:not(.dark) .terminal-controls small,html:not(.dark) .terminal-controls p { color:#c4d6f2; }
+html:not(.dark) .terminal-buttons button { color:#d8e7ff; background:#234676; border-color:#44638b; }
+html:not(.dark) .terminal-buttons button:hover:not(:disabled),html:not(.dark) .terminal-buttons button[aria-pressed="true"] { background:#efc26b; color:#10234c; }
+html:not(.dark) .trade-contours { stroke:#83a8e7; opacity:.22; }
+html:not(.dark) .trade-route-line { stroke:#e5b95e; }
+html:not(.dark) .trade-route-track { stroke:#456aab; }
+html:not(.dark) .trade-vessel { fill:#f0c978; }
+html:not(.dark) .trade-vessel-halo { fill:#1c3e7090; stroke:#668ac6; }
+html:not(.dark) .trade-hub-ring { fill:#24497b; stroke:#9cb9e7; }
+html:not(.dark) .trade-hub { fill:#f4cb79; }
+html:not(.dark) .trade-harbor { stroke:#88a9df; }
+html:not(.dark) .trade-aura { background:radial-gradient(ellipse,#3d7ae040,transparent 65%); }
+html:not(.dark) .showcase-shell .tracking-preview { background:linear-gradient(120deg,#f6f9ff,#d5e2f8); }
+html:not(.dark) .showcase-shell .route-network { background:linear-gradient(125deg,#d4e2fa,#bbd0f0); }
+html:not(.dark) .showcase-shell .route-summary { background:#dce8fa; }
+html:not(.dark) .showcase-shell .corridor-table tr[aria-selected="true"] td { background:#c6d9f7; }
+html:not(.dark) .showcase-shell main > div > div > .border-b:first-child { background:linear-gradient(120deg,#eef4ff,#d0dff8); }
+@media (max-width:639px) { .brand-link { padding:10px 12px; border-radius:11px; } .brand-logo,.dark .brand-logo { width:180px; } }
+@media (max-width:359px) { .brand-logo,.dark .brand-logo { width:150px; } }
+@media (prefers-reduced-motion:reduce) { .brand-link,.brand-link::after { transition:none; } .brand-link:hover { transform:none; } }
+
+/* Transparent vector identity: no scaling blur or contrasting logo tile. */
+.brand-link { padding:0; background:transparent; border-radius:0; box-shadow:none; overflow:visible; }
+.brand-link:hover { transform:none; box-shadow:none; }
+.brand-link::after { display:none; }
+.brand-logo,.dark .brand-logo { width:230px; height:auto; background:transparent; padding:0; transition:opacity .2s; }
+.brand-link:hover .brand-logo { opacity:.85; }
+.footer-brand { padding:0; background:transparent; box-shadow:none; }
+.footer-brand img { width:220px; height:auto; }
+@media(max-width:639px) { .brand-link { padding:0; border-radius:0; } .brand-logo,.dark .brand-logo { width:200px; } }
+@media(max-width:359px) { .brand-logo,.dark .brand-logo { width:175px; } }
+@media(prefers-reduced-motion:reduce) { .brand-logo { transition:none; } }
+
+/* Restored original brand artwork, with its original colors and proportions. */
+.brand-logo,.dark .brand-logo { width:230px; height:64px; object-fit:contain; }
+.dark .showcase-shell header { background:#f0f5fff5; }
+.footer-brand { background:#f0f5ff; padding:0 8px; border-radius:8px; }
+.footer-brand img { width:220px; height:74px; object-fit:contain; }
+@media(max-width:639px) { .brand-logo,.dark .brand-logo { width:200px; height:60px; } }
+@media(max-width:359px) { .brand-logo,.dark .brand-logo { width:175px; height:58px; } }

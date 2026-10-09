@@ -74,7 +74,7 @@ export const RFQModal: React.FC<RFQModalProps> = ({
     // Simulate API submission
     await new Promise((res) => setTimeout(res, 800));
 
-    setReference(`ABC-EXP-${100000 + crypto.getRandomValues(new Uint32Array(1))[0] % 900000}`);
+    setReference(`HLL-${100000 + crypto.getRandomValues(new Uint32Array(1))[0] % 900000}`);
     setSubmittedData(data);
     setIsSubmitted(true);
 
@@ -141,7 +141,7 @@ export const RFQModal: React.FC<RFQModalProps> = ({
 
           <div className="pt-2 flex flex-col sm:flex-row gap-3 justify-center">
             <a
-              href={`https://wa.me/918331851746?text=Hello%20ABC%20EXPORTS,%20I%20just%20submitted%20an%20RFQ%20for%20${encodeURIComponent(
+              href={`https://wa.me/918331851746?text=Hello%20Hind%20Legacy%20Logistics,%20I%20just%20submitted%20an%20RFQ%20for%20${encodeURIComponent(
                 submittedData.quantity + ' ' + submittedData.unit + ' of ' + submittedData.product
               )}.`}
               target="_blank"

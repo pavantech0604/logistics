@@ -10,13 +10,13 @@ export const AboutPage: React.FC = () => {
       <div className="border-b border-slate-200 dark:border-navy-800 pb-8">
         <div className="inline-flex items-center gap-1.5 text-xs font-bold tracking-wider uppercase text-forest-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/60 px-3 py-1 rounded-full border border-emerald-200 dark:border-emerald-800 mb-3">
           <Building2 className="w-3.5 h-3.5" />
-          About ABC EXPORTS
+          About Hind Legacy Logistics
         </div>
         <h1 className="text-3xl sm:text-5xl font-heading font-black text-navy-900 dark:text-white tracking-tight">
           Rooted in India. Connected globally.
         </h1>
         <p className="text-slate-600 dark:text-slate-400 text-sm sm:text-base mt-2 max-w-3xl leading-relaxed">
-          ABC EXPORTS was founded with a clear operational mission: to provide overseas food importers, wholesalers, and retail chains with dependable, verified, and quality-standardized agricultural commodities from India.
+          Hind Legacy Logistics was founded with a clear operational mission: to provide overseas food importers, wholesalers, and retail chains with dependable, verified, and quality-standardized agricultural commodities from India.
         </p>
       </div>
 
@@ -30,7 +30,7 @@ export const AboutPage: React.FC = () => {
             India is blessed with diverse agro-climatic zones producing the worlds finest rice varieties, aromatic spices, tropical fruits, and pulses. However, international trade often encounters challenges with inconsistent grading and incomplete export documentation.
           </p>
           <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
-            ABC EXPORTS eliminates these uncertainties. By operating directly at source farming clusters—Punjab for Basmati, Guntur for Chilies, Nashik for Onions and Grapes, Theni for Cavendish Bananas—we manage the quality chain from harvesting through mechanized cleaning, optical sortex sorting, and climate-controlled container stuffing.
+            Hind Legacy Logistics eliminates these uncertainties. By operating directly at source farming clusters—Punjab for Basmati, Guntur for Chilies, Nashik for Onions and Grapes, Theni for Cavendish Bananas—we manage the quality chain from harvesting through mechanized cleaning, optical sortex sorting, and climate-controlled container stuffing.
           </p>
 
           <div className="grid grid-cols-2 gap-4 pt-2">

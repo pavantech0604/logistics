@@ -1,65 +1,65 @@
-/* Ocean atelier: sea-glass surfaces and deep teal accents for light mode. */
-html:not(.dark) { color-scheme:light; --bg-main:#dfeeea; --surface:#edf7f2; --surface-elevated:#f3faf6; --surface-muted:#d4e9e3; --text-primary:#123f45; --text-secondary:#426969; --text-muted:#5a7c79; --border-subtle:#bdd7cf; --border-strong:#93bdb2; --forest-accent:#097a78; --gold-accent:#be774a; }
-html:not(.dark) body { background:#dfeeea; }
-html:not(.dark) .showcase-shell { background:radial-gradient(ellipse at 90% 5%,#afd9d780,transparent 45%),radial-gradient(ellipse at 0% 55%,#c6e3d4,transparent 50%),#dfeeea; color:#123f45; }
-html:not(.dark) .showcase-shell header { background:#e3f0e9ec; border-color:#bfdacf; box-shadow:0 7px 30px #17544b0a; }
-html:not(.dark) .brand-link span { color:#143f45; }
-html:not(.dark) .brand-link span:last-child { color:#097a78; }
-html:not(.dark) .brand-link > div:first-child { background:linear-gradient(135deg,#0e565b,#139391); box-shadow:0 6px 18px #09675d20; }
-html:not(.dark) header nav[aria-label="Main navigation"] { background:#cfe5dc; border-color:transparent; }
-html:not(.dark) header nav[aria-label="Main navigation"] a { color:#3c6566; }
-html:not(.dark) header nav[aria-label="Main navigation"] a:hover { background:#bdddd0; color:#123f45; }
-html:not(.dark) header nav[aria-label="Main navigation"] a[aria-current="page"],html:not(.dark) header nav[aria-label="Main navigation"] a[aria-current="page"]:hover { background:#105e63; color:#f0faf6; box-shadow:0 5px 16px #125c5820; }
-html:not(.dark) .home-page .export-hero,html:not(.dark) .export-hero { background:radial-gradient(ellipse at 88% 5%,#91d6d380,transparent 60%),radial-gradient(ellipse at 8% 95%,#e3dfbd60,transparent 50%),linear-gradient(115deg,#e1efe2,#cce8de 55%,#b4dcda); color:#143f45; border-color:transparent; box-shadow:0 22px 65px -30px #2b6c6050; }
-html:not(.dark) .hero-copy h1 > span { color:#087975; background:linear-gradient(100deg,#10656b,#139a8c); background-clip:text; -webkit-text-fill-color:transparent; }
-html:not(.dark) .hero-overline,html:not(.dark) .hero-overline span:last-child { color:#507776; }
-html:not(.dark) .hero-index,html:not(.dark) .hero-description { color:#3e6665; }
-html:not(.dark) .hero-index > span { background:#0a9182; box-shadow:0 0 0 5px #09958214; }
-html:not(.dark) .hero-actions > a,html:not(.dark) .hero-bottom-note > a { color:#175e64; }
-html:not(.dark) .hero-bottom-note > span,html:not(.dark) .trade-facts span { color:#507773; }
-html:not(.dark) .trade-facts > a svg { color:#087975; }
-html:not(.dark) .hero-quote,html:not(.dark) .premium-action { background:linear-gradient(120deg,#126268,#078880); color:#f1fffa; border-color:#087975; box-shadow:0 8px 25px #096e6426; }
-html:not(.dark) .hero-quote:hover,html:not(.dark) .premium-action:hover { background:#0d5e60; box-shadow:0 12px 32px #096e6440; }
-html:not(.dark) .home-page .terminal-experience,html:not(.dark) .terminal-experience { background:radial-gradient(ellipse at 50% 40%,#e3f5e8aa,#8ecbc0b0 85%); border-color:transparent; box-shadow:0 28px 65px -25px #236c6055,inset 0 1px #eefdf780; }
-html:not(.dark) .terminal-topline { background:#d8eee34d; color:#2d6566; }
-html:not(.dark) .terminal-label { background:#cae7dd; color:#236662; }
-html:not(.dark) .terminal-tag { background:#e2f3e9db; color:#245d60; box-shadow:0 8px 25px #236b5a14; }
-html:not(.dark) .tag-origin,html:not(.dark) .tag-cargo strong { color:#245d60; }
-html:not(.dark) .tag-origin > span { background:#0b9987; }
-html:not(.dark) .tag-cargo small { color:#507773; }
-html:not(.dark) .terminal-controls { background:#d4ebe0b0; }
-html:not(.dark) .terminal-controls small,html:not(.dark) .terminal-controls p { color:#416b69; }
-html:not(.dark) .terminal-buttons button { color:#0d7470; background:#e0f3e8; border-color:#9acaba; }
-html:not(.dark) .terminal-buttons button:hover:not(:disabled),html:not(.dark) .terminal-buttons button[aria-pressed="true"] { color:#f0fff8; background:#087975; }
-html:not(.dark) .terminal-loading { color:#087975; }
-html:not(.dark) .trade-contours { stroke:#167e79; opacity:.18; }
-html:not(.dark) .trade-route-line { stroke:#168e81; opacity:.6; }
-html:not(.dark) .trade-route-track { stroke:#e3f7ec; }
-html:not(.dark) .trade-vessel { fill:#127b73; }
-html:not(.dark) .trade-vessel-halo { fill:#d5f0e1b0; stroke:#60b3a0; }
-html:not(.dark) .trade-hub-ring { fill:#b6dfcb; stroke:#47a38c; }
-html:not(.dark) .trade-hub { fill:#138d7c; }
-html:not(.dark) .trade-harbor { stroke:#297e73; opacity:.28; }
-html:not(.dark) .trade-aura { background:radial-gradient(ellipse,#68c9be50,transparent 65%); }
-html:not(.dark) .showcase-shell .eyebrow,html:not(.dark) .showcase-shell .text-forest-600,html:not(.dark) .showcase-shell .text-forest-700,html:not(.dark) .showcase-shell .text-emerald-700,html:not(.dark) .showcase-shell .text-emerald-400,html:not(.dark) .showcase-shell .tracking-detail button { color:#087975; }
-html:not(.dark) .showcase-shell .bg-emerald-50,html:not(.dark) .showcase-shell .bg-emerald-100 { background:#cce8db; }
-html:not(.dark) .showcase-shell .text-slate-500 { color:#547572; }
-html:not(.dark) .showcase-shell .text-navy-900 { color:#143f45; }
-html:not(.dark) .showcase-shell .tracking-preview { background:linear-gradient(125deg,#eaf5ea,#cbe6dc); box-shadow:0 12px 35px -25px #286c5c40; }
-html:not(.dark) .showcase-shell .tracking-steps button.selected .tracking-node { background:#107c74; border-color:#107c74; }
-html:not(.dark) .showcase-shell main > div > div > .border-b:first-child { background:linear-gradient(120deg,#e5f2e8,#cbe6df); }
-html:not(.dark) .showcase-shell .route-network { background:#cde7df; color:#194e51; }
-html:not(.dark) .showcase-shell .route-summary { background:#dceee5; }
-html:not(.dark) .showcase-shell .route-summary .text-amber-200 { color:#187d72; }
-html:not(.dark) .route-network { --map-land:#99c5b7; --map-edge:#7daf9f; --map-label:#4a736b; --map-active:#0c625f; --map-line:#07877a; }
-html:not(.dark) .showcase-shell .corridor-table tr[aria-selected="true"] td { background:#c0e1d3; }
-html:not(.dark) .showcase-shell footer { background:linear-gradient(125deg,#c9e2d5,#badbd2); color:#416c66; }
-html:not(.dark) .showcase-shell footer .text-white { color:#16484b; }
-html:not(.dark) .showcase-shell footer .text-slate-300,html:not(.dark) .showcase-shell footer .text-slate-400,html:not(.dark) .showcase-shell footer .text-slate-500 { color:#416c66; }
-html:not(.dark) .showcase-shell footer .bg-navy-900,html:not(.dark) .showcase-shell footer .bg-navy-850 { background:#acd2c4; }
-html:not(.dark) .showcase-shell a[aria-label="Direct WhatsApp Trade Inquiry"] { background:#087975; border-color:#37a496; }
-html:not(.dark) :focus-visible { outline-color:#118d7d; }
-html:not(.dark) .showcase-shell .bg-forest-600,html:not(.dark) .showcase-shell .bg-emerald-600 { background-color:#087975; }
-html:not(.dark) .showcase-shell .text-forest-500,html:not(.dark) .showcase-shell .text-emerald-600 { color:#087975; }
-html:not(.dark) .home-page .product-card:hover { box-shadow:0 22px 50px -22px #1a756645; }
-html:not(.dark) .home-page .terminal-experience:hover { box-shadow:0 28px 75px -22px #236c6060; }
+/* Hind Legacy: warm ivory and the logo’s maritime navy for light mode. */
+html:not(.dark) { color-scheme:light; --bg-main:#ede9e0; --surface:#f5f3ef; --surface-elevated:#f9f7f4; --surface-muted:#e7e2d6; --text-primary:#151d42; --text-secondary:#293a82; --text-muted:#3349a3; --border-subtle:#d7cfbd; --border-strong:#93a1bd; --forest-accent:#1f2c64; --gold-accent:#667ba2; }
+html:not(.dark) body { background:#ede9e0; }
+html:not(.dark) .showcase-shell { background:radial-gradient(ellipse at 90% 5%,#d3cab580,transparent 45%),radial-gradient(ellipse at 0% 55%,#dfd9ca,transparent 50%),#ede9e0; color:#151d42; }
+html:not(.dark) .showcase-shell header { background:#efece4ec; border-color:#d9d1c0; box-shadow:0 7px 30px #1a24510a; }
+html:not(.dark) .brand-link span { color:#151e44; }
+html:not(.dark) .brand-link span:last-child { color:#1f2c64; }
+html:not(.dark) .brand-link > div:first-child { background:linear-gradient(135deg,#192450,#28387e); box-shadow:0 6px 18px #1b265520; }
+html:not(.dark) header nav[aria-label="Main navigation"] { background:#e3ded1; border-color:transparent; }
+html:not(.dark) header nav[aria-label="Main navigation"] a { color:#27377b; }
+html:not(.dark) header nav[aria-label="Main navigation"] a:hover { background:#dad2c0; color:#151d42; }
+html:not(.dark) header nav[aria-label="Main navigation"] a[aria-current="page"],html:not(.dark) header nav[aria-label="Main navigation"] a[aria-current="page"]:hover { background:#1c2757; color:#f7f6f2; box-shadow:0 5px 16px #1a255420; }
+html:not(.dark) .home-page .export-hero,html:not(.dark) .export-hero { background:radial-gradient(ellipse at 88% 5%,#a1aec680,transparent 60%),radial-gradient(ellipse at 8% 95%,#dcd4c460,transparent 50%),linear-gradient(115deg,#eeeae2,#e3ded1 55%,#d6cdba); color:#151e44; border-color:transparent; box-shadow:0 22px 65px -30px #24337350; }
+html:not(.dark) .hero-copy h1 > span { color:#1f2c62; background:linear-gradient(100deg,#1e2a5d,#2a3b83); background-clip:text; -webkit-text-fill-color:transparent; }
+html:not(.dark) .hero-overline,html:not(.dark) .hero-overline span:last-child { color:#304397; }
+html:not(.dark) .hero-index,html:not(.dark) .hero-description { color:#27387d; }
+html:not(.dark) .hero-index > span { background:#253576; box-shadow:0 0 0 5px #26367814; }
+html:not(.dark) .hero-actions > a,html:not(.dark) .hero-bottom-note > a { color:#1e2a5d; }
+html:not(.dark) .hero-bottom-note > span,html:not(.dark) .trade-facts span { color:#304397; }
+html:not(.dark) .trade-facts > a svg { color:#1f2c62; }
+html:not(.dark) .hero-quote,html:not(.dark) .premium-action { background:linear-gradient(120deg,#1d295d,#22306d); color:#faf9f6; border-color:#1f2c62; box-shadow:0 8px 25px #1d285a26; }
+html:not(.dark) .hero-quote:hover,html:not(.dark) .premium-action:hover { background:#1a2553; box-shadow:0 12px 32px #1d285a40; }
+html:not(.dark) .home-page .terminal-experience,html:not(.dark) .terminal-experience { background:radial-gradient(ellipse at 50% 40%,#f1eee7aa,#99a6c0b0 85%); border-color:transparent; box-shadow:0 28px 65px -25px #22306d55,inset 0 1px #f8f6f380; }
+html:not(.dark) .terminal-topline { background:#eae6dc4d; color:#233270; }
+html:not(.dark) .terminal-label { background:#e2dccf; color:#212e68; }
+html:not(.dark) .terminal-tag { background:#f0ece5db; color:#202d64; box-shadow:0 8px 25px #22306c14; }
+html:not(.dark) .tag-origin,html:not(.dark) .tag-cargo strong { color:#202d64; }
+html:not(.dark) .tag-origin > span { background:#27387d; }
+html:not(.dark) .tag-cargo small { color:#304397; }
+html:not(.dark) .terminal-controls { background:#e7e2d8b0; }
+html:not(.dark) .terminal-controls small,html:not(.dark) .terminal-controls p { color:#293a83; }
+html:not(.dark) .terminal-buttons button { color:#1f2c62; background:#efece4; border-color:#a0acc4; }
+html:not(.dark) .terminal-buttons button:hover:not(:disabled),html:not(.dark) .terminal-buttons button[aria-pressed="true"] { color:#f9f8f6; background:#1f2c62; }
+html:not(.dark) .terminal-loading { color:#1f2c62; }
+html:not(.dark) .trade-contours { stroke:#243270; opacity:.18; }
+html:not(.dark) .trade-route-line { stroke:#27387d; opacity:.6; }
+html:not(.dark) .trade-route-track { stroke:#f2efe9; }
+html:not(.dark) .trade-vessel { fill:#22306b; }
+html:not(.dark) .trade-vessel-halo { fill:#eae5dbb0; stroke:#6d80a6; }
+html:not(.dark) .trade-hub-ring { fill:#d8cfbd; stroke:#384fb2; }
+html:not(.dark) .trade-hub { fill:#26367a; }
+html:not(.dark) .trade-harbor { stroke:#28397f; opacity:.28; }
+html:not(.dark) .trade-aura { background:radial-gradient(ellipse,#8091b150,transparent 65%); }
+html:not(.dark) .showcase-shell .eyebrow,html:not(.dark) .showcase-shell .text-forest-600,html:not(.dark) .showcase-shell .text-forest-700,html:not(.dark) .showcase-shell .text-emerald-700,html:not(.dark) .showcase-shell .text-emerald-400,html:not(.dark) .showcase-shell .tracking-detail button { color:#1f2c62; }
+html:not(.dark) .showcase-shell .bg-emerald-50,html:not(.dark) .showcase-shell .bg-emerald-100 { background:#e3ded1; }
+html:not(.dark) .showcase-shell .text-slate-500 { color:#304499; }
+html:not(.dark) .showcase-shell .text-navy-900 { color:#151e44; }
+html:not(.dark) .showcase-shell .tracking-preview { background:linear-gradient(125deg,#f3f1ec,#e2dccf); box-shadow:0 12px 35px -25px #24327040; }
+html:not(.dark) .showcase-shell .tracking-steps button.selected .tracking-node { background:#222f6a; border-color:#222f6a; }
+html:not(.dark) .showcase-shell main > div > div > .border-b:first-child { background:linear-gradient(120deg,#f0ede7,#e2dccf); }
+html:not(.dark) .showcase-shell .route-network { background:#e3ded1; color:#192451; }
+html:not(.dark) .showcase-shell .route-summary { background:#ebe7df; }
+html:not(.dark) .showcase-shell .route-summary .text-amber-200 { color:#243271; }
+html:not(.dark) .route-network { --map-land:#9ca9c2; --map-edge:#7d8eaf; --map-label:#2d4090; --map-active:#1a2554; --map-line:#22306c; }
+html:not(.dark) .showcase-shell .corridor-table tr[aria-selected="true"] td { background:#dcd5c5; }
+html:not(.dark) .showcase-shell footer { background:linear-gradient(125deg,#e0d9cb,#d8cfbd); color:#2a3b83; }
+html:not(.dark) .showcase-shell footer .text-white { color:#17214a; }
+html:not(.dark) .showcase-shell footer .text-slate-300,html:not(.dark) .showcase-shell footer .text-slate-400,html:not(.dark) .showcase-shell footer .text-slate-500 { color:#2a3b83; }
+html:not(.dark) .showcase-shell footer .bg-navy-900,html:not(.dark) .showcase-shell footer .bg-navy-850 { background:#cfc5af; }
+html:not(.dark) .showcase-shell a[aria-label="Direct WhatsApp Trade Inquiry"] { background:#1f2c62; border-color:#354aa6; }
+html:not(.dark) :focus-visible { outline-color:#263678; }
+html:not(.dark) .showcase-shell .bg-forest-600,html:not(.dark) .showcase-shell .bg-emerald-600 { background-color:#1f2c62; }
+html:not(.dark) .showcase-shell .text-forest-500,html:not(.dark) .showcase-shell .text-emerald-600 { color:#1f2c62; }
+html:not(.dark) .home-page .product-card:hover { box-shadow:0 22px 50px -22px #22306d45; }
+html:not(.dark) .home-page .terminal-experience:hover { box-shadow:0 28px 75px -22px #22306d60; }

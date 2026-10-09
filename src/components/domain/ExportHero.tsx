@@ -13,7 +13,7 @@ export function ExportHero({ openRFQ }: { openRFQ: () => void }) {
     <TradeAtmosphere />
     <div className="hero-orbit orbit-one" aria-hidden="true" /><div className="hero-orbit orbit-two" aria-hidden="true" />
     <div className="hero-editorial max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="hero-overline"><span>INDIA, CONNECTED TO THE WORLD</span><span>ABC / INTERNATIONAL TRADE</span></div>
+      <div className="hero-overline"><span>INDIA, CONNECTED TO THE WORLD</span><span>HIND LEGACY / INTERNATIONAL TRADE</span></div>
       <div className="hero-composition">
         <div className="hero-copy">
           <p className="hero-index"><span /> Sourcing with purpose. Shipping with precision.</p>
