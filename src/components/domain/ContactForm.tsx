@@ -6,6 +6,7 @@ import { Button } from '../ui/Button';
 import { useToast } from '../ui/Toast';
 import { Send, CheckCircle2 } from 'lucide-react';
 import { PRODUCTS_DATA } from '../../data/productsData';
+import { COMPANY } from '../../config/company';
 
 const contactSchema = z.object({
   senderName: z.string().min(2, 'Company or representative name is required'),
@@ -68,7 +69,7 @@ export const ContactForm: React.FC = () => {
             Inquiry Successfully Transmitted!
           </h4>
           <p className="text-xs text-slate-600 dark:text-slate-300 max-w-md mx-auto leading-relaxed">
-            Our trade team in India (+91 8331851746) is currently reviewing active mandi arrivals and port container freight slots. You will receive a formal quotation within 24 hours.
+            Our trade team in India ({COMPANY.phone}) is currently reviewing active mandi arrivals and port container freight slots. You will receive a formal quotation within 24 hours.
           </p>
           <div className="pt-2">
             <button

@@ -1,9 +1,9 @@
-import logo from '../../assets/logo-restored.png';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, MessageSquare, MapPin, Mail, Shield, CheckCircle } from 'lucide-react';
+import { Phone, MessageSquare, MapPin, Mail, Shield, CheckCircle, FileText } from 'lucide-react';
+import logoHorizontal from '../../assets/logo-horizontal.svg';
+import { COMPANY } from '../../config/company';
 
-const currentYear = new Date().getFullYear();
 export const Footer: React.FC = () => {
   return (
     <footer className="bg-navy-950 text-slate-400 text-sm border-t border-navy-850">
@@ -12,7 +12,9 @@ export const Footer: React.FC = () => {
           
           {/* Company Bio */}
           <div className="space-y-4">
-            <Link to="/" className="footer-brand"><img src={logo} alt="Hind Legacy Logistics" width="2164" height="727" /></Link>
+            <Link to="/" className="footer-brand" aria-label={COMPANY.legalName} title={COMPANY.legalName}>
+              <img src={logoHorizontal} alt={COMPANY.legalName} width="1205" height="260" />
+            </Link>
             <p className="text-xs text-slate-400 leading-relaxed">
               International Trading &amp; Export Company connecting certified Indian agricultural commodities, fresh produce, and spices to global importers, retail chains, and wholesale distributors.
             </p>
@@ -58,34 +60,45 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Official Contact Desk */}
+          {/* Official Contact & Corporate Desk */}
           <div className="space-y-3">
             <h4 className="font-heading font-bold text-white text-xs uppercase tracking-wider">
-              Direct Trade Desk
+              Corporate &amp; Trade Desk
             </h4>
             <div className="text-xs space-y-3 text-slate-300">
               <p className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-emerald-400 shrink-0" />
-                <a href="tel:+918331851746" className="hover:text-white font-medium">+91 8331851746</a>
+                <a href={`tel:${COMPANY.phoneRaw}`} className="hover:text-white font-medium">
+                  {COMPANY.phone}
+                </a>
               </p>
               <p className="flex items-center gap-2.5">
                 <MessageSquare className="w-4 h-4 text-emerald-400 shrink-0" />
                 <a
-                  href="https://wa.me/918331851746?text=Hello%20Hind%20Legacy%20Logistics,%20I%20am%20interested%20in%20discussing%20an%20export%20inquiry."
+                  href={COMPANY.whatsappUrl()}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-white"
+                  className="hover:text-white font-medium"
                 >
                   WhatsApp Business Desk
                 </a>
               </p>
               <p className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-emerald-400 shrink-0" />
-                <span className="hover:text-white">Contact our trade desk</span>
+                <a href={`mailto:${COMPANY.email}`} className="hover:text-white font-medium">
+                  {COMPANY.email}
+                </a>
               </p>
               <p className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-                <span>Major Dispatch Hubs: JNPT (Mumbai), Mundra (Gujarat), Chennai &amp; Visakhapatnam</span>
+                <span className="text-[11px] leading-relaxed">
+                  <strong className="text-slate-200 block">Registered Office:</strong>
+                  {COMPANY.formattedAddress}
+                </span>
+              </p>
+              <p className="flex items-center gap-2.5 text-[11px] text-slate-400">
+                <FileText className="w-4 h-4 text-amber-400 shrink-0" />
+                <span>CIN: <strong className="text-slate-200 font-mono">{COMPANY.cin}</strong></span>
               </p>
             </div>
           </div>
@@ -95,9 +108,11 @@ export const Footer: React.FC = () => {
         {/* Bottom Strip */}
         <div className="mt-12 pt-8 border-t border-navy-850 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
           <p>
-            &copy; {currentYear} Hind Legacy Logistics. All rights reserved. International Trading Company.
+            {COMPANY.copyrightText}
           </p>
           <p className="flex items-center gap-3">
+            <span>CIN: {COMPANY.cin}</span>
+            <span>&bull;</span>
             <span>Export Compliance</span>
             <span>&bull;</span>
             <span>Phytosanitary Certified</span>

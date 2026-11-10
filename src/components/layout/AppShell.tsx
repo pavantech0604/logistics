@@ -7,6 +7,7 @@ import { ProductItem, QuoteDefaults } from '../../types';
 import { useLocation } from 'react-router-dom';
 import { m, useReducedMotion } from 'framer-motion';
 import { MessageSquare, ArrowUp } from 'lucide-react';
+import { COMPANY } from '../../config/company';
 
 interface AppShellProps {
   children: (props: {
@@ -21,7 +22,7 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "instant" });
     const titles: Record<string, string> = { '/': 'Global agricultural trade', '/products': 'Export commodities', '/calculator': 'Freight estimator', '/process': 'Export process', '/about': 'About our sourcing network', '/contact': 'Contact and RFQ' };
-    document.title = `${titles[location.pathname] || 'Page not found'} | Hind Legacy Logistics`;
+    document.title = `${titles[location.pathname] || 'Page not found'} | ${COMPANY.displayName}`;
   }, [location.pathname]);
   const [rfqModalOpen, setRfqModalOpen] = useState(false);
   const [targetProduct, setTargetProduct] = useState<string | undefined>(undefined);
@@ -32,15 +33,20 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
 
   // Theme mode management
   const [darkMode, setDarkMode] = useState<boolean>(() => {
-    return localStorage.getItem('abc_theme_v2') === 'dark';
+    return (
+      localStorage.getItem('hll_theme') === 'dark' ||
+      localStorage.getItem('abc_theme_v2') === 'dark'
+    );
   });
 
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add('dark');
+      localStorage.setItem('hll_theme', 'dark');
       localStorage.setItem('abc_theme_v2', 'dark');
     } else {
       document.documentElement.classList.remove('dark');
+      localStorage.setItem('hll_theme', 'light');
       localStorage.setItem('abc_theme_v2', 'light');
     }
   }, [darkMode]);
@@ -119,7 +125,7 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
 
         {/* WhatsApp Business Desk */}
         <a
-          href="https://wa.me/918331851746?text=Hello%20Hind%20Legacy%20Logistics,%20I%20would%20like%20to%20discuss%20an%20export%20inquiry."
+          href={COMPANY.whatsappUrl()}
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Direct WhatsApp Trade Inquiry"

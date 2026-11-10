@@ -8,6 +8,7 @@ import { useToast } from '../ui/Toast';
 import { Send, CheckCircle2, ShieldCheck } from 'lucide-react';
 import { PRODUCTS_DATA } from '../../data/productsData';
 import { QuoteDefaults } from '../../types';
+import { COMPANY } from '../../config/company';
 
 const rfqSchema = z.object({
   buyerName: z.string().min(2, 'Name or company name must be at least 2 characters'),
@@ -141,7 +142,7 @@ export const RFQModal: React.FC<RFQModalProps> = ({
 
           <div className="pt-2 flex flex-col sm:flex-row gap-3 justify-center">
             <a
-              href={`https://wa.me/918331851746?text=Hello%20Hind%20Legacy%20Logistics,%20I%20just%20submitted%20an%20RFQ%20for%20${encodeURIComponent(
+              href={`https://wa.me/${COMPANY.whatsapp.number}?text=Hello%20Hind%20Legacy%20Logistics,%20I%20just%20submitted%20an%20RFQ%20for%20${encodeURIComponent(
                 submittedData.quantity + ' ' + submittedData.unit + ' of ' + submittedData.product
               )}.`}
               target="_blank"

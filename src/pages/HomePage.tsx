@@ -14,6 +14,7 @@ import { SectionObject, TiltSurface } from '../components/ui/Depth';
 import { Card } from '../components/ui/Card';
 import { Button } from '../components/ui/Button';
 import { Shield, CheckCircle2, PackageCheck, Ship, Sparkles, PhoneForwarded, FileCheck, Box, Anchor, Globe2, Building2, Award, ArrowRight, MessageCircle } from 'lucide-react';
+import { COMPANY } from '../config/company';
 
 interface HomePageProps {
   openRFQ: (productName?: string, defaults?: QuoteDefaults) => void;
@@ -165,7 +166,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 Discuss Custom Requirements
               </Button>
               <a
-                href="https://wa.me/918331851746?text=Hello%20Hind%20Legacy%20Logistics,%20I%20have%20a%20custom%20export%20sourcing%20requirement."
+                href={COMPANY.whatsappUrl('Hello Hind Legacy Logistics, I have a custom export sourcing requirement.')}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-navy-950/80 hover:bg-navy-950 border border-slate-700 text-slate-200 text-sm font-semibold px-5 py-3 rounded-lg transition-colors flex items-center gap-2"
@@ -247,10 +248,10 @@ export const HomePage: React.FC<HomePageProps> = ({
                   Direct Export Trade Desk
                 </p>
                 <a
-                  href="tel:+918331851746"
+                  href={`tel:${COMPANY.phoneRaw}`}
                   className="text-lg font-bold text-navy-900 dark:text-white hover:text-forest-600 dark:hover:text-emerald-400 transition"
                 >
-                  +91 8331851746
+                  {COMPANY.phone}
                 </a>
                 <p className="text-[11px] text-slate-500 dark:text-slate-400">
                   Voice calls &amp; WhatsApp inquiries attended within 24 hours
@@ -363,8 +364,8 @@ export const HomePage: React.FC<HomePageProps> = ({
                 </div>
                 <div>
                   <p className="text-xs font-semibold text-slate-500 uppercase">Telephone / Direct Line</p>
-                  <a href="tel:+918331851746" className="text-base font-bold text-navy-900 dark:text-white hover:text-emerald-500 transition">
-                    +91 8331851746
+                  <a href={`tel:${COMPANY.phoneRaw}`} className="text-base font-bold text-navy-900 dark:text-white hover:text-emerald-500 transition">
+                    {COMPANY.phone}
                   </a>
                   <p className="text-[11px] text-slate-500 dark:text-slate-400">Official business inquiries (Voice &amp; WhatsApp)</p>
                 </div>
@@ -377,12 +378,12 @@ export const HomePage: React.FC<HomePageProps> = ({
                 <div>
                   <p className="text-xs font-semibold text-slate-500 uppercase">Instant WhatsApp Chat</p>
                   <a
-                    href="https://wa.me/918331851746?text=Hello%20Hind%20Legacy%20Logistics,%20I%20am%20interested%20in%20discussing%20an%20export%20inquiry."
+                    href={COMPANY.whatsappUrl()}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-base font-bold text-navy-900 dark:text-white hover:text-emerald-500 transition"
                   >
-                    Connect on WhatsApp
+                    Connect on WhatsApp ({COMPANY.phone})
                   </a>
                   <p className="text-[11px] text-slate-500 dark:text-slate-400">Fast overseas response within 24 hours</p>
                 </div>

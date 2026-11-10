@@ -1,7 +1,8 @@
 import React from 'react';
 import { ContactForm } from '../components/domain/ContactForm';
-import { Phone, MessageSquare, MapPin, Mail, Clock, HelpCircle } from 'lucide-react';
+import { Phone, MessageSquare, MapPin, Mail, Clock, HelpCircle, Building2 } from 'lucide-react';
 import { Card } from '../components/ui/Card';
+import { COMPANY } from '../config/company';
 
 export const ContactPage: React.FC = () => {
   const faqs = [
@@ -54,19 +55,21 @@ export const ContactPage: React.FC = () => {
           </div>
 
           <div className="space-y-4">
+            {/* Phone */}
             <div className="flex items-start gap-4 p-5 rounded-2xl bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 shadow-sm">
               <div className="w-11 h-11 rounded-xl bg-emerald-50 dark:bg-emerald-950 text-forest-700 dark:text-emerald-400 flex items-center justify-center shrink-0">
                 <Phone className="w-5 h-5" />
               </div>
               <div>
                 <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide">Direct Trade Telephone</p>
-                <a href="tel:+918331851746" className="text-lg font-bold text-navy-900 dark:text-white hover:text-emerald-500 transition">
-                  +91 8331851746
+                <a href={`tel:${COMPANY.phoneRaw}`} className="text-lg font-bold text-navy-900 dark:text-white hover:text-emerald-500 transition">
+                  {COMPANY.phone}
                 </a>
                 <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">International calling &amp; voice inquiries</p>
               </div>
             </div>
 
+            {/* WhatsApp */}
             <div className="flex items-start gap-4 p-5 rounded-2xl bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 shadow-sm">
               <div className="w-11 h-11 rounded-xl bg-emerald-50 dark:bg-emerald-950 text-forest-700 dark:text-emerald-400 flex items-center justify-center shrink-0">
                 <MessageSquare className="w-5 h-5" />
@@ -74,38 +77,70 @@ export const ContactPage: React.FC = () => {
               <div>
                 <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide">WhatsApp Business Desk</p>
                 <a
-                  href="https://wa.me/918331851746?text=Hello%20Hind%20Legacy%20Logistics,%20I%20am%20interested%20in%20discussing%20an%20export%20inquiry."
+                  href={COMPANY.whatsappUrl()}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-base font-bold text-navy-900 dark:text-white hover:text-emerald-500 transition"
                 >
-                  Connect on WhatsApp (+91 8331851746)
+                  Connect on WhatsApp ({COMPANY.phone})
                 </a>
                 <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">Instant response for overseas buyers</p>
               </div>
             </div>
 
+            {/* Official Email */}
             <div className="flex items-start gap-4 p-5 rounded-2xl bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 shadow-sm">
               <div className="w-11 h-11 rounded-xl bg-blue-50 dark:bg-blue-950 text-blue-700 dark:text-blue-400 flex items-center justify-center shrink-0">
                 <Mail className="w-5 h-5" />
               </div>
               <div>
                 <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide">Formal Trade Inquiries</p>
-                <p className="text-base font-bold text-navy-900 dark:text-white">Send a quotation request</p>
-                <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">Purchase orders &amp; spec submissions</p>
+                <a href={`mailto:${COMPANY.email}`} className="text-base font-bold text-navy-900 dark:text-white hover:text-emerald-500 transition">
+                  {COMPANY.email}
+                </a>
+                <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">RFQs, purchase orders &amp; contract specifications</p>
               </div>
             </div>
 
+            {/* Registered Office & Hubs */}
             <div className="flex items-start gap-4 p-5 rounded-2xl bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 shadow-sm">
               <div className="w-11 h-11 rounded-xl bg-amber-50 dark:bg-amber-950 text-amber-700 dark:text-amber-400 flex items-center justify-center shrink-0">
                 <MapPin className="w-5 h-5" />
               </div>
               <div>
-                <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide">Headquarters &amp; Origin Country</p>
-                <p className="text-sm font-bold text-navy-900 dark:text-white">Hind Legacy Logistics &bull; India</p>
-                <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5">
-                  Export clearances via JNPT (Nhava Sheva), Mundra, Chennai &amp; Visakhapatnam Port
+                <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide">Registered Office Address</p>
+                <p className="text-xs font-bold text-navy-900 dark:text-white leading-relaxed mt-0.5">
+                  {COMPANY.formattedAddress}
                 </p>
+                <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-2">
+                  <strong>Port Clearance Hubs:</strong> JNPT (Nhava Sheva), Mundra, Chennai &amp; Visakhapatnam Port
+                </p>
+              </div>
+            </div>
+
+            {/* Corporate Registration Info Box */}
+            <div className="p-5 rounded-2xl bg-slate-100 dark:bg-navy-900/60 border border-slate-200 dark:border-navy-800 space-y-2 text-xs">
+              <div className="flex items-center gap-2 font-bold text-navy-900 dark:text-white text-xs uppercase tracking-wider">
+                <Building2 className="w-4 h-4 text-emerald-500" />
+                Corporate Registration Details
+              </div>
+              <div className="grid grid-cols-2 gap-2 pt-1 text-[11px] text-slate-600 dark:text-slate-400">
+                <div>
+                  <span className="block text-slate-400 dark:text-slate-500">Legal Entity</span>
+                  <span className="font-semibold text-navy-900 dark:text-white">{COMPANY.legalName}</span>
+                </div>
+                <div>
+                  <span className="block text-slate-400 dark:text-slate-500">CIN (MCA)</span>
+                  <span className="font-mono font-semibold text-navy-900 dark:text-white">{COMPANY.cin}</span>
+                </div>
+                <div>
+                  <span className="block text-slate-400 dark:text-slate-500">Incorporation Date</span>
+                  <span className="font-semibold text-navy-900 dark:text-white">22 October 2026</span>
+                </div>
+                <div>
+                  <span className="block text-slate-400 dark:text-slate-500">State &amp; Country</span>
+                  <span className="font-semibold text-navy-900 dark:text-white">Andhra Pradesh, India</span>
+                </div>
               </div>
             </div>
           </div>

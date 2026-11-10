@@ -1,5 +1,6 @@
 import React from 'react';
 import { MapPin, ShieldCheck, PhoneCall, MessageSquare, Anchor } from 'lucide-react';
+import { COMPANY } from '../../config/company';
 
 export const TopTradeBar: React.FC = () => {
   return (
@@ -22,15 +23,15 @@ export const TopTradeBar: React.FC = () => {
 
         <div className="hidden md:flex items-center space-x-5 text-xs">
           <a
-            href="tel:+918331851746"
+            href={`tel:${COMPANY.phoneRaw}`}
             className="hover:text-white flex items-center gap-1.5 transition-colors font-medium"
             title="Direct Phone Line"
           >
             <PhoneCall className="w-3.5 h-3.5 text-emerald-400" />
-            <span>+91 8331851746</span>
+            <span>{COMPANY.phone}</span>
           </a>
           <a
-            href="https://wa.me/918331851746?text=Hello%20Hind%20Legacy%20Logistics,%20I%20am%20interested%20in%20discussing%20an%20agricultural%20export%20inquiry."
+            href={COMPANY.whatsappUrl('Hello Hind Legacy Logistics, I am interested in discussing an agricultural export inquiry.')}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-emerald-300 flex items-center gap-1.5 transition-colors text-slate-300 font-medium"

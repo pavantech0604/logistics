@@ -1,7 +1,9 @@
 import React from 'react';
 import { Card } from '../components/ui/Card';
 import { QualityCertifications } from '../components/domain/QualityCertifications';
-import { Building2, MapPin } from 'lucide-react';
+import { Building2, MapPin, ShieldCheck, FileText, Calendar, Mail } from 'lucide-react';
+import { COMPANY } from '../config/company';
+import logoHorizontal from '../assets/logo-horizontal.svg';
 
 export const AboutPage: React.FC = () => {
   return (
@@ -10,13 +12,13 @@ export const AboutPage: React.FC = () => {
       <div className="border-b border-slate-200 dark:border-navy-800 pb-8">
         <div className="inline-flex items-center gap-1.5 text-xs font-bold tracking-wider uppercase text-forest-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/60 px-3 py-1 rounded-full border border-emerald-200 dark:border-emerald-800 mb-3">
           <Building2 className="w-3.5 h-3.5" />
-          About Hind Legacy Logistics
+          About {COMPANY.displayName}
         </div>
         <h1 className="text-3xl sm:text-5xl font-heading font-black text-navy-900 dark:text-white tracking-tight">
           Rooted in India. Connected globally.
         </h1>
         <p className="text-slate-600 dark:text-slate-400 text-sm sm:text-base mt-2 max-w-3xl leading-relaxed">
-          Hind Legacy Logistics was founded with a clear operational mission: to provide overseas food importers, wholesalers, and retail chains with dependable, verified, and quality-standardized agricultural commodities from India.
+          {COMPANY.legalName} was founded with a clear operational mission: to provide overseas food importers, wholesalers, and retail chains with dependable, verified, and quality-standardized agricultural commodities from India.
         </p>
       </div>
 
@@ -27,10 +29,10 @@ export const AboutPage: React.FC = () => {
             Operational Excellence from Farm-Gate to Container Port
           </h2>
           <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
-            India is blessed with diverse agro-climatic zones producing the worlds finest rice varieties, aromatic spices, tropical fruits, and pulses. However, international trade often encounters challenges with inconsistent grading and incomplete export documentation.
+            India is blessed with diverse agro-climatic zones producing the world&apos;s finest rice varieties, aromatic spices, tropical fruits, and pulses. However, international trade often encounters challenges with inconsistent grading and incomplete export documentation.
           </p>
           <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
-            Hind Legacy Logistics eliminates these uncertainties. By operating directly at source farming clusters—Punjab for Basmati, Guntur for Chilies, Nashik for Onions and Grapes, Theni for Cavendish Bananas—we manage the quality chain from harvesting through mechanized cleaning, optical sortex sorting, and climate-controlled container stuffing.
+            {COMPANY.displayName} eliminates these uncertainties. By operating directly at source farming clusters—Punjab for Basmati, Guntur for Chilies, Nashik for Onions and Grapes, Theni for Cavendish Bananas—we manage the quality chain from harvesting through mechanized cleaning, optical sortex sorting, and climate-controlled container stuffing.
           </p>
 
           <div className="grid grid-cols-2 gap-4 pt-2">
@@ -54,6 +56,94 @@ export const AboutPage: React.FC = () => {
               alt="Global Freight Logistics"
               className="w-full h-96 object-cover"
             />
+          </div>
+        </div>
+      </div>
+
+      {/* Corporate Registration & Company Profile Block */}
+      <div className="p-8 rounded-3xl bg-white dark:bg-navy-900 border border-slate-200 dark:border-navy-800 shadow-sm space-y-6">
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 border-b border-slate-200 dark:border-navy-800 pb-6">
+          <div className="space-y-1">
+            <div className="inline-flex items-center gap-1.5 text-xs font-bold tracking-wider uppercase text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/60 px-3 py-1 rounded-full border border-emerald-200 dark:border-emerald-800">
+              <ShieldCheck className="w-3.5 h-3.5" />
+              Verified Corporate Identity
+            </div>
+            <h2 className="text-2xl font-heading font-extrabold text-navy-900 dark:text-white">
+              Company Registration &amp; Legal Details
+            </h2>
+            <p className="text-xs text-slate-500 dark:text-slate-400">
+              Incorporated under the Companies Act, 2013, Ministry of Corporate Affairs, Government of India.
+            </p>
+          </div>
+          <div className="p-3 bg-slate-50 dark:bg-navy-950 rounded-xl border border-slate-200 dark:border-navy-800">
+            <img src={logoHorizontal} alt={COMPANY.legalName} className="h-12 w-auto" width="1205" height="260" />
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-xs">
+          <div className="space-y-1 p-4 rounded-xl bg-slate-50 dark:bg-navy-950 border border-slate-200 dark:border-navy-800">
+            <span className="flex items-center gap-1.5 font-semibold text-slate-500 uppercase text-[10px] tracking-wider">
+              <Building2 className="w-3.5 h-3.5 text-blue-500" />
+              Legal Name
+            </span>
+            <p className="text-sm font-bold text-navy-900 dark:text-white">
+              {COMPANY.legalName}
+            </p>
+          </div>
+
+          <div className="space-y-1 p-4 rounded-xl bg-slate-50 dark:bg-navy-950 border border-slate-200 dark:border-navy-800">
+            <span className="flex items-center gap-1.5 font-semibold text-slate-500 uppercase text-[10px] tracking-wider">
+              <FileText className="w-3.5 h-3.5 text-emerald-500" />
+              Corporate Identity No. (CIN)
+            </span>
+            <p className="text-sm font-mono font-bold text-navy-900 dark:text-white">
+              {COMPANY.cin}
+            </p>
+          </div>
+
+          <div className="space-y-1 p-4 rounded-xl bg-slate-50 dark:bg-navy-950 border border-slate-200 dark:border-navy-800">
+            <span className="flex items-center gap-1.5 font-semibold text-slate-500 uppercase text-[10px] tracking-wider">
+              <Calendar className="w-3.5 h-3.5 text-amber-500" />
+              Incorporation Date
+            </span>
+            <p className="text-sm font-bold text-navy-900 dark:text-white">
+              22 October 2026
+            </p>
+          </div>
+
+          <div className="space-y-1 p-4 rounded-xl bg-slate-50 dark:bg-navy-950 border border-slate-200 dark:border-navy-800">
+            <span className="flex items-center gap-1.5 font-semibold text-slate-500 uppercase text-[10px] tracking-wider">
+              <FileText className="w-3.5 h-3.5 text-slate-400" />
+              GSTIN
+            </span>
+            <p className="text-sm font-mono text-slate-400 dark:text-slate-500 italic">
+              {COMPANY.gstin ? COMPANY.gstin : '—'}
+            </p>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2 text-xs">
+          <div className="space-y-1 p-4 rounded-xl bg-slate-50 dark:bg-navy-950 border border-slate-200 dark:border-navy-800 md:col-span-2">
+            <span className="flex items-center gap-1.5 font-semibold text-slate-500 uppercase text-[10px] tracking-wider">
+              <MapPin className="w-3.5 h-3.5 text-rose-500" />
+              Registered Office
+            </span>
+            <p className="text-xs font-semibold text-navy-900 dark:text-white leading-relaxed">
+              {COMPANY.formattedAddress}
+            </p>
+          </div>
+
+          <div className="space-y-2 p-4 rounded-xl bg-slate-50 dark:bg-navy-950 border border-slate-200 dark:border-navy-800">
+            <span className="flex items-center gap-1.5 font-semibold text-slate-500 uppercase text-[10px] tracking-wider">
+              <Mail className="w-3.5 h-3.5 text-blue-500" />
+              Official Contact
+            </span>
+            <p className="text-xs font-semibold text-navy-900 dark:text-white">
+              <a href={`mailto:${COMPANY.email}`} className="hover:underline">{COMPANY.email}</a>
+            </p>
+            <p className="text-xs font-semibold text-navy-900 dark:text-white">
+              <a href={`tel:${COMPANY.phoneRaw}`} className="hover:underline">{COMPANY.phone}</a>
+            </p>
           </div>
         </div>
       </div>

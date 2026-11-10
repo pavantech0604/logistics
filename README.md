@@ -1,6 +1,6 @@
-# ABC EXPORTS — Modern B2B International Trading & Agricultural Export Platform
+# HIND LEGACY LOGISTICS PRIVATE LIMITED — Modern B2B International Trading & Agricultural Export Platform
 
-A modern, high-performance, responsive React + TypeScript web application engineered for **ABC EXPORTS** (India &bull; Global Markets). Reconstructed from the design reference `abc-exports.html` and elevated into an enterprise-ready SaaS portal with interactive B2B logistics tools, full container capacity calculations, dynamic RFQ workflow, and dark/light mode.
+A modern, high-performance, responsive React + TypeScript web application engineered for **Hind Legacy Logistics Private Limited** (India &bull; Global Markets). Elevated into an enterprise-grade platform with interactive B2B logistics tools, full container capacity calculations, dynamic RFQ workflow, and dark/light mode.
 
 ---
 
@@ -73,7 +73,7 @@ npm run preview
 4. **Zod & React Hook Form RFQ Engine**:
    - Schema validation with inline error messages, unit selectors (MT, Containers, Cartons), Incoterms (FOB, CIF, CFR, EXW), and automated feedback toasts.
 5. **Direct Trade Desk Connectivity**:
-   - Click-to-chat WhatsApp Business desk (`+91 8331851746`) with pre-filled purchase inquiry messages.
+   - Click-to-chat WhatsApp Business desk (`+91 9059995204`) with pre-filled purchase inquiry messages.
 
 ---
 
@@ -166,8 +166,11 @@ All mock data is cleanly separated from UI components in `src/data/`:
 
 ## 6. Official Contact & Trade Desk Details
 
-- **Company**: ABC EXPORTS
-- **Origin**: India
-- **Direct Phone**: +91 8331851746
-- **WhatsApp**: [Connect on WhatsApp](https://wa.me/918331851746)
+- **Company**: HIND LEGACY LOGISTICS PRIVATE LIMITED
+- **Corporate Identity Number (CIN)**: U46300AP2026PTC129015
+- **Date of Incorporation**: 22 October 2026
+- **Registered Address**: 2-380, Cherlopalli (CT), Cherlopali Grampanchayat, C. Gollapalle, Tirupati Rural, Chittoor – 517505, Andhra Pradesh, India.
+- **Official Email**: info@hindlegacylogistics.com
+- **Direct Phone**: +91 9059995204
+- **WhatsApp**: [Connect on WhatsApp](https://wa.me/919059995204)
 - **Primary Dispatch Ports**: JNPT / Nhava Sheva (Mumbai), Mundra (Gujarat), Chennai (Tamil Nadu), Visakhapatnam (Andhra Pradesh), Cochin (Kerala).

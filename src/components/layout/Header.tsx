@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { ArrowUpRight, Menu, X, Sun, Moon } from 'lucide-react';
-import logo from '../../assets/logo-restored.png';
+import logoHorizontal from '../../assets/logo-horizontal.svg';
+import logoDark from '../../assets/logo-dark.svg';
+import { COMPANY } from '../../config/company';
 import { Button } from '../ui/Button';
 
 
@@ -38,8 +40,14 @@ export const Header: React.FC<HeaderProps> = ({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 xl:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="brand-link flex items-center gap-2 sm:gap-3 group min-w-0">
-            <img src={logo} alt="Hind Legacy Logistics" className="brand-logo" width="2164" height="727" />
+          <Link to="/" className="brand-link flex items-center gap-2 sm:gap-3 group min-w-0" aria-label={COMPANY.legalName}>
+            <img
+              src={darkMode ? logoDark : logoHorizontal}
+              alt={COMPANY.legalName}
+              className="brand-logo"
+              width="1205"
+              height="260"
+            />
           </Link>
 
           {/* Desktop Navigation */}
